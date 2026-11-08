@@ -1,0 +1,41 @@
+{
+  "case": {},
+  "result": {
+    "escalation": true,
+    "stage": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "en",
+  "issue": null,
+  "stage": "escalated",
+  "unknown": [],
+  "triage": {},
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": null,
+  "notice": null,
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "Someone called saying they were from my bank, I shared the OTP and Rs 48,000 got debited. Please help."
+    },
+    {
+      "role": "assistant",
+      "content": "**This sounds like online/cyber fraud, which is a crime and outside what I can help with.**\n\n- Call **1930** (National Cyber Crime Helpline) immediately; fast reporting can freeze the money.\n- Report at **cybercrime.gov.in**.\n- Inform your bank right away.\n- For a free lawyer: NALSA **15100**.",
+      "kind": "escalation",
+      "meta": {
+        "rule_hits": [
+          {
+            "category": "cyber_fraud",
+            "tier": "cyber",
+            "matched": "OTP"
+          }
+        ]
+      }
+    }
+  ],
+  "llm_calls": [],
+  "model": "groq/openai/gpt-oss-120b"
+}

@@ -1,0 +1,49 @@
+# Swap the model here (or with env vars LLM_PROVIDER / LLM_MODEL / LLM_BASE_URL / LLM_API_KEY).
+# Every provider below speaks the OpenAI-compatible chat API, so no code change is needed.
+provider: groq
+
+providers:
+  groq:
+    base_url: https://api.groq.com/openai/v1
+    api_key_env: GROQ_API_KEY
+    model: openai/gpt-oss-120b
+    stt_model: whisper-large-v3        # voice input (free on Groq)
+    json_mode: true
+  gemini:
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+    api_key_env: GEMINI_API_KEY
+    model: gemini-2.5-flash
+    json_mode: true
+  openai:
+    base_url: https://api.openai.com/v1
+    api_key_env: OPENAI_API_KEY
+    model: gpt-4o-mini
+    stt_model: whisper-1
+    json_mode: true
+  anthropic:
+    base_url: https://api.anthropic.com/v1/
+    api_key_env: ANTHROPIC_API_KEY
+    model: claude-sonnet-5-5
+    json_mode: false
+  openrouter:
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+    model: meta-llama/llama-3.3-70b-instruct
+    json_mode: true
+  ollama:                               # fully local, no key
+    base_url: http://localhost:11434/v1
+    api_key_env: ""
+    model: llama3.1
+    json_mode: true
+  custom:                               # any OpenAI-compatible endpoint (e.g. one Kuku provides)
+    base_url: ${LLM_BASE_URL}
+    api_key_env: LLM_API_KEY
+    model: ${LLM_MODEL}
+    json_mode: false
+
+# Voice transcription provider (separate so you can use Groq Whisper with any chat model)
+stt_provider: groq
+
+temperature: 0.2
+max_followup_rounds: 2       # ask at most this many rounds of questions before advising
+notice_reply_days: 15        # days given to the other party in generated notices

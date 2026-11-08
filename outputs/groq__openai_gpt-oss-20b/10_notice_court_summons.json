@@ -1,0 +1,186 @@
+{
+  "test_case": {
+    "id": "10_notice_court_summons",
+    "category": "red flag (court)",
+    "turns": [
+      "Mujhe ye mila hai, samajh nahi aa raha: \"IN THE COURT OF THE CIVIL JUDGE (JUNIOR DIVISION), JAIPUR. Summons to defendant in a suit. Whereas Shri Mohan Lal has instituted a suit against you for recovery of Rs 2,40,000, you are hereby summoned to appear in this Court in person or by a pleader on 20 November 2026 at 10:30 AM to answer the claim. Take notice that in default of your appearance, the suit will be heard and determined in your absence.\"\n"
+    ],
+    "expect": {
+      "escalation": "none",
+      "stage": "notice",
+      "lawyer": true
+    }
+  },
+  "result": {
+    "escalation": true,
+    "stage": true,
+    "lawyer": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "seconds": 65.0,
+  "language": "hinglish",
+  "issue": null,
+  "stage": "notice",
+  "case": {},
+  "unknown": [],
+  "triage": {
+    "issue_type": "notice_explain",
+    "language": "hi",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "User received a court summons and wants it explained."
+  },
+  "lawyer_reasons": [
+    "You mentioned police / court involvement: Summons",
+    "This notice is from a court: get a lawyer before responding."
+  ],
+  "police_court_flag": true,
+  "advice": null,
+  "notice": {
+    "sender": "IN THE COURT OF THE CIVIL JUDGE (JUNIOR DIVISION), JAIPUR",
+    "sender_type": "court",
+    "what_they_claim": "Mohan Lal ne aapke khilaf Rs 2,40,000 ki recovery ka case file kiya hai.",
+    "what_they_want": "Aapko 20 November 2026 ko 10:30 AM par court mein personally ya pleader ke through appear karna hai, warna case aapki absence mein decide ho jayega.",
+    "deadline_text": "20 November 2026 at 10:30 AM",
+    "amount_demanded": 240000,
+    "laws_cited": [],
+    "points": [
+      {
+        "text": "Yeh ek court summons hai, jo aapko court mein appear karne ke liye keh raha hai.",
+        "kb_ids": [
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "Agar aap specified date par appear nahi hote, to judge aapki absence mein case decide kar sakta hai.",
+        "kb_ids": [
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "Summons ka matlab hai ki aapko court mein apni taraf se jawab dena hoga, chahe aap khud aayen ya lawyer ke through.",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      }
+    ],
+    "what_you_can_do": [
+      {
+        "text": "Ek lawyer se consult karein aur unhe summons ki copy dikhayein.",
+        "kb_ids": [
+          "DEP-4",
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "Apne side ki evidence aur documents ready karein jo aapke defense ko support karein.",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      },
+      {
+        "text": "Agar aapko lagta hai ki amount galat hai ya aapko koi objection hai, to court mein counterclaim ya objection file kar sakte hain.",
+        "kb_ids": [
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "Agar aap lawyer afford nahi kar sakte, to NALSA (15100) se free legal aid le sakte hain.",
+        "kb_ids": [
+          "DEP-6"
+        ]
+      }
+    ],
+    "dont_know": []
+  },
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "Mujhe ye mila hai, samajh nahi aa raha: \"IN THE COURT OF THE CIVIL JUDGE (JUNIOR DIVISION), JAIPUR. Summons to defendant in a suit. Whereas Shri Mohan Lal has instituted a suit against you for recovery of Rs 2,40,000, you are hereby summoned to appear in this Court in person or by a pleader on 20 November 2026 at 10:30 AM to answer the claim. Take notice that in default of your appearance, the suit will be heard and determined in your absence.\"\n"
+    },
+    {
+      "role": "assistant",
+      "content": "⚖️ **Is maamle ke kuch hisse ke liye aapko real vakeel chahiye** (police / criminal / court). Free legal aid: NALSA **15100** ya District Legal Services Authority. Court ya police ka koi bhi kaagaz ignore mat karein.\n\n**Kisne bheja:** IN THE COURT OF THE CIVIL JUDGE (JUNIOR DIVISION), JAIPUR\n**Woh kya keh rahe hain:** Mohan Lal ne aapke khilaf Rs 2,40,000 ki recovery ka case file kiya hai.\n**Woh aapse kya chahte hain:** Aapko 20 November 2026 ko 10:30 AM par court mein personally ya pleader ke through appear karna hai, warna case aapki absence mein decide ho jayega.\n**Deadline:** 20 November 2026 at 10:30 AM\n\n#### Iska matlab\n- Yeh ek court summons hai, jo aapko court mein appear karne ke liye keh raha hai.\n- Agar aap specified date par appear nahi hote, to judge aapki absence mein case decide kar sakta hai.\n- Summons ka matlab hai ki aapko court mein apni taraf se jawab dena hoga, chahe aap khud aayen ya lawyer ke through.\n\n#### Aapke options\n1. Ek lawyer se consult karein aur unhe summons ki copy dikhayein.\n2. Apne side ki evidence aur documents ready karein jo aapke defense ko support karein.\n3. Agar aapko lagta hai ki amount galat hai ya aapko koi objection hai, to court mein counterclaim ya objection file kar sakte hain.\n4. Agar aap lawyer afford nahi kar sakte, to NALSA (15100) se free legal aid le sakte hain.\n\n#### Vakeel kab chahiye\n- You mentioned police / court involvement: Summons\n- This notice is from a court: get a lawyer before responding.\n\n_Ye legal information hai, legal advice nahi. Ye sirf upar diye verified sources pe based hai. Court ka maamla ho ya badi rakam ho to vakeel se baat karein (free: NALSA 15100)._",
+      "kind": "notice",
+      "meta": {
+        "parsed": {
+          "sender": "IN THE COURT OF THE CIVIL JUDGE (JUNIOR DIVISION), JAIPUR",
+          "sender_type": "court",
+          "what_they_claim": "Mohan Lal ne aapke khilaf Rs 2,40,000 ki recovery ka case file kiya hai.",
+          "what_they_want": "Aapko 20 November 2026 ko 10:30 AM par court mein personally ya pleader ke through appear karna hai, warna case aapki absence mein decide ho jayega.",
+          "deadline_text": "20 November 2026 at 10:30 AM",
+          "amount_demanded": 240000,
+          "laws_cited": [],
+          "points": [
+            {
+              "text": "Yeh ek court summons hai, jo aapko court mein appear karne ke liye keh raha hai.",
+              "kb_ids": [
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "Agar aap specified date par appear nahi hote, to judge aapki absence mein case decide kar sakta hai.",
+              "kb_ids": [
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "Summons ka matlab hai ki aapko court mein apni taraf se jawab dena hoga, chahe aap khud aayen ya lawyer ke through.",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            }
+          ],
+          "what_you_can_do": [
+            {
+              "text": "Ek lawyer se consult karein aur unhe summons ki copy dikhayein.",
+              "kb_ids": [
+                "DEP-4",
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "Apne side ki evidence aur documents ready karein jo aapke defense ko support karein.",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            },
+            {
+              "text": "Agar aapko lagta hai ki amount galat hai ya aapko koi objection hai, to court mein counterclaim ya objection file kar sakte hain.",
+              "kb_ids": [
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "Agar aap lawyer afford nahi kar sakte, to NALSA (15100) se free legal aid le sakte hain.",
+              "kb_ids": [
+                "DEP-6"
+              ]
+            }
+          ],
+          "dont_know": []
+        },
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 15.8,
+      "prompt_tokens": 545,
+      "completion_tokens": 241
+    },
+    {
+      "name": "explain_notice_nojsonmode",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 29.49,
+      "prompt_tokens": 2761,
+      "completion_tokens": 843
+    }
+  ],
+  "model": "groq/openai/gpt-oss-20b"
+}

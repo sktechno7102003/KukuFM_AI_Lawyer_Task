@@ -1,0 +1,109 @@
+{
+  "issue": "deposit",
+  "label": "Security deposit not returned by landlord",
+  "entries": [
+    {
+      "id": "DEP-1",
+      "act": "Model Tenancy Act, 2021",
+      "act_aliases": ["Model Tenancy Act", "MTA"],
+      "section": "Section 11",
+      "cite": "Section 11, Model Tenancy Act, 2021",
+      "title": "Deposit cap and refund on vacating",
+      "summary": "Under the Model Tenancy Act, the security deposit for a house is capped at two months' rent (six months for non-residential premises). The landlord must refund it when they take back vacant possession, after deducting only the tenant's genuine dues (for example unpaid rent or damage beyond normal wear and tear).",
+      "use_when": "Any deposit dispute. Explain the principle, but ALWAYS say this is a model law and only applies where the state has adopted it.",
+      "caveat": "Model law: it binds only in states/UTs that have enacted it. Many states still follow their own rent control law, and then the rent agreement terms decide refund timing.",
+      "source": "https://revenue.py.gov.in/downloads/notification/Model%20Tenancy%20Act.pdf",
+      "verified_via": "Text reproduced in Puducherry Revenue Dept PDF + LiveLaw/Mondaq summaries (checked 2026-11-08)",
+      "confidence": "medium",
+      "use_in_notice": false
+    },
+    {
+      "id": "DEP-2",
+      "act": "Indian Contract Act, 1872",
+      "act_aliases": ["Indian Contract Act", "Contract Act"],
+      "section": "Section 73",
+      "cite": "Section 73, Indian Contract Act, 1872",
+      "title": "Compensation when a contract is broken",
+      "summary": "A rent agreement is a contract. If the landlord breaks a promise in it (like returning the deposit), the tenant can claim the money plus compensation for loss that naturally arose from the breach.",
+      "use_when": "Deposit withheld in breach of the rent agreement; legal basis line in a notice.",
+      "caveat": "Compensation for indirect or remote losses is not allowed.",
+      "source": "https://www.indiacode.nic.in/handle/123456789/2187",
+      "verified_via": "Well-established provision; India Code handle for the Indian Contract Act",
+      "confidence": "high",
+      "use_in_notice": true
+    },
+    {
+      "id": "DEP-3",
+      "act": "Limitation Act, 1963",
+      "act_aliases": ["Limitation Act"],
+      "section": "",
+      "cite": "Limitation Act, 1963",
+      "title": "Time limit to file a money recovery case",
+      "summary": "A civil case to recover money is generally to be filed within 3 years from when the money became due (here, roughly from the date you vacated and the landlord failed to refund).",
+      "use_when": "Telling the user how long they have; flag a lawyer if close to 3 years.",
+      "caveat": "The exact starting point depends on facts; near the 3-year mark a lawyer must check.",
+      "source": "https://www.indiacode.nic.in/handle/123456789/1565",
+      "verified_via": "General rule; exact Article not cited deliberately",
+      "confidence": "medium",
+      "use_in_notice": false
+    },
+    {
+      "id": "DEP-4",
+      "act": "",
+      "act_aliases": [],
+      "section": "",
+      "cite": "Practice: legal notice before a case",
+      "title": "Send a written legal notice first",
+      "summary": "A legal notice is a formal written demand. It is not compulsory between private parties, but it creates a written record, often gets the money back without a case, and shows the court you tried to settle. A person can send it themselves by Registered Post with acknowledgement (keep the receipt) and also by email/WhatsApp.",
+      "use_when": "Always the first step for deposit, refund or salary disputes.",
+      "caveat": "",
+      "source": "",
+      "verified_via": "General practice, no statute claimed",
+      "confidence": "high",
+      "use_in_notice": false
+    },
+    {
+      "id": "DEP-5",
+      "act": "",
+      "act_aliases": [],
+      "section": "",
+      "cite": "Practice: civil court / Small Causes Court recovery",
+      "title": "Where to file if the notice fails",
+      "summary": "If the landlord does not pay after the notice, the usual route is a money recovery case in the local civil court (in some cities, the Small Causes Court or a Rent Authority/Rent Court if the state has one). Court fees and procedure vary by state, so this is the point to talk to a lawyer or free legal aid.",
+      "use_when": "Explaining escalation after notice.",
+      "caveat": "Which court depends on the city/state and amount; do not name a specific court as certain.",
+      "source": "",
+      "verified_via": "General practice; forum varies by state",
+      "confidence": "medium",
+      "use_in_notice": false
+    },
+    {
+      "id": "DEP-6",
+      "act": "Legal Services Authorities Act, 1987",
+      "act_aliases": ["Legal Services Authorities Act"],
+      "section": "",
+      "cite": "Legal Services Authorities Act, 1987",
+      "title": "Free legal aid and Lok Adalat",
+      "summary": "District Legal Services Authorities (DLSA) give free legal advice and lawyers to eligible people (including women, children, SC/ST members, industrial workers and people below an income limit), and run Lok Adalats where disputes can be settled cheaply and quickly. Call NALSA helpline 15100.",
+      "use_when": "User cannot afford a lawyer or wants a cheap settlement.",
+      "caveat": "Eligibility income limits differ by state.",
+      "source": "https://nalsa.gov.in/",
+      "verified_via": "NALSA website lists 15100 helpline (checked 2026-11-08)",
+      "confidence": "high",
+      "use_in_notice": false
+    }
+  ],
+  "proof_checklist": [
+    "Rent agreement (even unregistered or a WhatsApp/email agreement)",
+    "Proof deposit was paid (bank transfer / UPI screenshot / receipt)",
+    "Proof you vacated and handed over keys (message, photos, handover note)",
+    "Move-out photos/videos of the flat's condition",
+    "All messages with landlord about the refund"
+  ],
+  "lawyer_triggers": [
+    "Landlord has filed a case or police complaint against you",
+    "Close to 3 years since you vacated",
+    "Amount is very large or there is a dispute about property ownership",
+    "Landlord threatens you physically"
+  ]
+}

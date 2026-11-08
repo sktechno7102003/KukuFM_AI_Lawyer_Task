@@ -1,0 +1,113 @@
+{
+  "contacts": [
+    {
+      "name": "NALSA free legal aid helpline",
+      "number": "15100",
+      "url": "https://nalsa.gov.in/"
+    },
+    {
+      "name": "National Consumer Helpline",
+      "number": "1915",
+      "url": "https://consumerhelpline.gov.in/"
+    },
+    {
+      "name": "National Consumer Helpline WhatsApp",
+      "number": "8800001915",
+      "url": "https://consumerhelpline.gov.in/"
+    },
+    {
+      "name": "Emergency (police/ambulance)",
+      "number": "112",
+      "url": ""
+    },
+    {
+      "name": "Women Helpline",
+      "number": "181",
+      "url": ""
+    },
+    {
+      "name": "Cyber crime helpline",
+      "number": "1930",
+      "url": "https://cybercrime.gov.in/"
+    },
+    {
+      "name": "Tele-MANAS mental health helpline",
+      "number": "14416",
+      "url": "https://telemanas.mohfw.gov.in/"
+    }
+  ],
+  "allowed_domains": [
+    "nalsa.gov.in",
+    "consumerhelpline.gov.in",
+    "e-jagriti.gov.in",
+    "cybercrime.gov.in",
+    "indiacode.nic.in",
+    "telemanas.mohfw.gov.in",
+    "labour.gov.in"
+  ],
+  "repealed_or_replaced": [
+    {
+      "pattern": "\\bIPC\\b|Indian Penal Code",
+      "name": "Indian Penal Code (IPC)",
+      "replaced_by": "Bharatiya Nyaya Sanhita, 2023 (in force from 1 July 2024)",
+      "replacement_pattern": "Bharatiya Nyaya Sanhita|BNS"
+    },
+    {
+      "pattern": "\\bCrPC\\b|Cr\\.P\\.C|Code of Criminal Procedure",
+      "name": "Code of Criminal Procedure (CrPC)",
+      "replaced_by": "Bharatiya Nagarik Suraksha Sanhita, 2023 (from 1 July 2024)",
+      "replacement_pattern": "Nagarik Suraksha|BNSS"
+    },
+    {
+      "pattern": "Indian Evidence Act",
+      "name": "Indian Evidence Act, 1872",
+      "replaced_by": "Bharatiya Sakshya Adhiniyam, 2023 (from 1 July 2024)",
+      "replacement_pattern": "Sakshya"
+    },
+    {
+      "pattern": "Payment of Wages Act",
+      "name": "Payment of Wages Act, 1936",
+      "replaced_by": "Code on Wages, 2019 (in force from 21 Nov 2025)",
+      "replacement_pattern": "Code on Wages"
+    },
+    {
+      "pattern": "Minimum Wages Act",
+      "name": "Minimum Wages Act, 1948",
+      "replaced_by": "Code on Wages, 2019 (in force from 21 Nov 2025)",
+      "replacement_pattern": "Code on Wages"
+    },
+    {
+      "pattern": "Consumer Protection Act,? 1986",
+      "name": "Consumer Protection Act, 1986",
+      "replaced_by": "Consumer Protection Act, 2019",
+      "replacement_pattern": "2019"
+    },
+    {
+      "pattern": "e-?Daakhil",
+      "name": "e-Daakhil portal",
+      "replaced_by": "e-Jagriti portal (e-jagriti.gov.in) from Jan 2025",
+      "replacement_pattern": "e-?Jagriti"
+    }
+  ],
+  "out_of_scope_note": "This assistant covers three everyday problems: (1) landlord not returning a security deposit, (2) refund/defective product or service, (3) unpaid salary. It can also explain a notice you received in plain language. It does NOT handle criminal cases, police/FIR/arrest, domestic violence, divorce/custody, property/title disputes, or anything already in court.",
+  "general_entries": [
+    {
+      "id": "GEN-1",
+      "act": "Bharatiya Nyaya Sanhita, 2023",
+      "act_aliases": [
+        "Bharatiya Nyaya Sanhita",
+        "BNS"
+      ],
+      "section": "Section 318",
+      "cite": "Section 318, Bharatiya Nyaya Sanhita, 2023",
+      "title": "Old IPC is replaced; cheating is now a BNS offence",
+      "summary": "Since 1 July 2024 the Indian Penal Code (IPC) no longer applies to new offences; it was replaced by the Bharatiya Nyaya Sanhita (BNS). Cheating (old IPC 420) is now Section 318 BNS. Deciding whether a money dispute is actually a crime is complex: most deposit/refund/salary disputes are civil, and wrongly filing a criminal complaint can backfire.",
+      "use_when": "ONLY when the user asks to file a criminal/IPC/cheating case. Correct the outdated law and recommend a lawyer; do not encourage criminal complaints.",
+      "caveat": "Criminal matters are out of scope; always recommend a lawyer.",
+      "source": "https://www.livelaw.in/supreme-court/offences-of-cheating-criminal-breach-of-trust-cannot-co-exist-on-same-allegations-supreme-court-305118",
+      "verified_via": "IPC 420 -> BNS 318(4) mapping per court records quoted in LiveLaw/Drishti (checked 2026-11-08)",
+      "confidence": "high",
+      "use_in_notice": false
+    }
+  ]
+}

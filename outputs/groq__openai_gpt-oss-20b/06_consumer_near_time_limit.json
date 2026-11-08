@@ -1,0 +1,324 @@
+{
+  "test_case": {
+    "id": "06_consumer_near_time_limit",
+    "category": "edge (time limit)",
+    "turns": [
+      "I booked a holiday package for Rs 1,20,000 from a travel agency in December 2024. They cancelled the trip and promised a refund but never paid. I complained to them many times by email.",
+      "I have the booking receipt and emails. The agency is called Sunshine Travels.",
+      "That's all I know. What should I do now?"
+    ],
+    "expect": {
+      "issue": "consumer",
+      "escalation": "none",
+      "language": "en",
+      "stage": "advised",
+      "lawyer": true
+    }
+  },
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "stage": true,
+    "lawyer": true,
+    "language": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "seconds": 60.9,
+  "language": "en",
+  "issue": "consumer",
+  "stage": "advised",
+  "case": {
+    "proof_available": [
+      "emails"
+    ],
+    "communication_so_far": "complained many times by email",
+    "seller_or_platform": "travel agency",
+    "product_or_service": "holiday package",
+    "amount_paid": 120000.0,
+    "purchase_date": "2024-12",
+    "problem": "refund not received",
+    "complained_to_seller": true
+  },
+  "unknown": [],
+  "triage": {
+    "issue_type": "consumer",
+    "language": "en",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "Refund not received for cancelled holiday package from travel agency."
+  },
+  "lawyer_reasons": [
+    "You are close to (or past) the 2-year limit for a consumer complaint."
+  ],
+  "police_court_flag": false,
+  "advice": {
+    "summary": "You bought a holiday package for Rs 1.2 lakh and haven’t gotten a refund. You are a consumer under the Consumer Protection Act and can file a complaint within 2 years. The amount falls under the District Consumer Commission and no filing fee is needed.",
+    "points": [
+      {
+        "text": "You are a consumer and the refund issue is a deficiency in service under the Consumer Protection Act.",
+        "kb_ids": [
+          "CON-1",
+          "CON-2"
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "text": "Call the National Consumer Helpline at 1915 (or WhatsApp 8800001915) to get help and a possible refund before filing a case.",
+        "kb_ids": [
+          "CON-8"
+        ]
+      },
+      {
+        "text": "If the helpline doesn’t resolve it, file a complaint with the District Consumer Commission through the e-Jagriti portal (e-jagriti.gov.in).",
+        "kb_ids": [
+          "CON-3"
+        ]
+      },
+      {
+        "text": "The amount paid (Rs 1.2 lakh) means the case goes to the District Commission; no filing fee is required.",
+        "kb_ids": [
+          "CON-4",
+          "CON-5"
+        ]
+      },
+      {
+        "text": "Remember the 2-year time limit from the date the problem arose; you are well within it.",
+        "kb_ids": [
+          "CON-6"
+        ]
+      }
+    ],
+    "dont_know": [],
+    "lawyer_reason": "This is a routine consumer dispute; a lawyer is not required unless the matter escalates or you face legal threats.",
+    "needs_lawyer": true,
+    "facts": [
+      "Purchase was about 707 days ago (2024-12-01). Consumer complaints must be filed within 2 years of the problem arising.",
+      "Amount paid Rs 120,000 -> District Commission; no filing fee (up to Rs 5 lakh)."
+    ],
+    "cited": [
+      "CON-1",
+      "CON-2",
+      "CON-3",
+      "CON-4",
+      "CON-5",
+      "CON-6",
+      "CON-8"
+    ],
+    "confidence": "medium",
+    "confidence_why": [
+      "some sources are model laws or recently changed laws (see caveats)"
+    ],
+    "safety_notes": []
+  },
+  "notice": null,
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "I booked a holiday package for Rs 1,20,000 from a travel agency in December 2024. They cancelled the trip and promised a refund but never paid. I complained to them many times by email."
+    },
+    {
+      "role": "assistant",
+      "content": "You bought a holiday package for Rs 1.2 lakh and haven’t gotten a refund. You are a consumer under the Consumer Protection Act and can file a complaint within 2 years. The amount falls under the District Consumer Commission and no filing fee is needed.\n\n#### Where you stand\n- You are a consumer and the refund issue is a deficiency in service under the Consumer Protection Act. `CON-1``CON-2`\n\n#### What you can do next\n1. Call the National Consumer Helpline at 1915 (or WhatsApp 8800001915) to get help and a possible refund before filing a case. `CON-8`\n2. If the helpline doesn’t resolve it, file a complaint with the District Consumer Commission through the e-Jagriti portal (e-jagriti.gov.in). `CON-3`\n3. The amount paid (Rs 1.2 lakh) means the case goes to the District Commission; no filing fee is required. `CON-4``CON-5`\n4. Remember the 2-year time limit from the date the problem arose; you are well within it. `CON-6`\n\n#### Calculated from your details\n- Purchase was about 707 days ago (2024-12-01). Consumer complaints must be filed within 2 years of the problem arising.\n- Amount paid Rs 120,000 -> District Commission; no filing fee (up to Rs 5 lakh).\n\n#### Proof to keep ready\n- Order ID / invoice / bill\n- Payment proof (bank/UPI/card statement)\n- Screenshots of the product listing and promises made\n- Photos/videos of the defect\n- All emails, chats and complaint/ticket numbers with the seller or platform\n\n#### When to see a lawyer\n**Yes, talk to a lawyer.**\nThis is a routine consumer dispute; a lawyer is not required unless the matter escalates or you face legal threats.\n- You are close to (or past) the 2-year limit for a consumer complaint.\n\n#### Verified sources used\n- `CON-1` **Section 2(7), Consumer Protection Act, 2019**: Who is a consumer ([source](https://www.indiacode.nic.in/handle/123456789/15256)) _Caveat: Purchases for business/resale may not qualify._\n- `CON-2` **Section 2(11), Consumer Protection Act, 2019**: Deficiency in service ([source](https://www.indiacode.nic.in/handle/123456789/15256))\n- `CON-3` **Section 35, Consumer Protection Act, 2019**: Filing a complaint with the District Commission ([source](https://e-jagriti.gov.in/)) _Caveat: Portal names change; tell the user to check e-jagriti.gov.in._\n- `CON-4` **Consumer Protection (Jurisdiction) Rules, 2021**: Which commission (by amount paid) ([source](https://www.scconline.com/blog/post/2022/01/03/pecuniary-jurisdiction-of-district-state-and-national-commissions-revised-vide-consumer-protection-jurisdiction-of-the-district-commission-the-state-commission-and-the-national-commission-rules-2/)) _Caveat: Based on value of goods/services paid, not compensation claimed._\n- `CON-5` **Rule 7, Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020**: Filing fee ([source](https://e-jagriti.gov.in/)) _Caveat: Fee table as amended in 2022; check the portal for the current fee._\n- `CON-6` **Section 69, Consumer Protection Act, 2019**: Time limit: 2 years ([source](https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/69.php))\n- `CON-8` **National Consumer Helpline (1915)**: Free pre-litigation helpline ([source](https://consumerhelpline.gov.in/public/contact))\n\n**Confidence:** 🟡 Medium (some sources are model laws or recently changed laws (see caveats))\n\nYou can ask me follow-up questions, generate a **legal notice** draft, or **practise** talking to the other side.\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "advice",
+      "meta": {
+        "advice": {
+          "summary": "You bought a holiday package for Rs 1.2 lakh and haven’t gotten a refund. You are a consumer under the Consumer Protection Act and can file a complaint within 2 years. The amount falls under the District Consumer Commission and no filing fee is needed.",
+          "points": [
+            {
+              "text": "You are a consumer and the refund issue is a deficiency in service under the Consumer Protection Act.",
+              "kb_ids": [
+                "CON-1",
+                "CON-2"
+              ]
+            }
+          ],
+          "next_steps": [
+            {
+              "text": "Call the National Consumer Helpline at 1915 (or WhatsApp 8800001915) to get help and a possible refund before filing a case.",
+              "kb_ids": [
+                "CON-8"
+              ]
+            },
+            {
+              "text": "If the helpline doesn’t resolve it, file a complaint with the District Consumer Commission through the e-Jagriti portal (e-jagriti.gov.in).",
+              "kb_ids": [
+                "CON-3"
+              ]
+            },
+            {
+              "text": "The amount paid (Rs 1.2 lakh) means the case goes to the District Commission; no filing fee is required.",
+              "kb_ids": [
+                "CON-4",
+                "CON-5"
+              ]
+            },
+            {
+              "text": "Remember the 2-year time limit from the date the problem arose; you are well within it.",
+              "kb_ids": [
+                "CON-6"
+              ]
+            }
+          ],
+          "dont_know": [],
+          "lawyer_reason": "This is a routine consumer dispute; a lawyer is not required unless the matter escalates or you face legal threats.",
+          "needs_lawyer": true,
+          "facts": [
+            "Purchase was about 707 days ago (2024-12-01). Consumer complaints must be filed within 2 years of the problem arising.",
+            "Amount paid Rs 120,000 -> District Commission; no filing fee (up to Rs 5 lakh)."
+          ],
+          "cited": [
+            "CON-1",
+            "CON-2",
+            "CON-3",
+            "CON-4",
+            "CON-5",
+            "CON-6",
+            "CON-8"
+          ],
+          "confidence": "medium",
+          "confidence_why": [
+            "some sources are model laws or recently changed laws (see caveats)"
+          ],
+          "safety_notes": []
+        },
+        "case": {
+          "proof_available": [
+            "emails"
+          ],
+          "communication_so_far": "complained many times by email",
+          "seller_or_platform": "travel agency",
+          "product_or_service": "holiday package",
+          "amount_paid": 120000.0,
+          "purchase_date": "2024-12",
+          "problem": "refund not received",
+          "complained_to_seller": true
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "I have the booking receipt and emails. The agency is called Sunshine Travels."
+    },
+    {
+      "role": "assistant",
+      "content": "- Call the National Consumer Helpline (1915 or WhatsApp 8800001915) to lodge a complaint and seek a refund before formal filing. `CON-8`\n- Since you paid Rs 1.2 lakh, the complaint falls under the District Consumer Commission; you can file online via the e-Jagriti portal (e-jagriti.gov.in) without a lawyer. `CON-3``CON-4`\n- No filing fee is required for amounts up to Rs 5 lakh, so you can file without paying any fee. `CON-5`\n- You must file within 2 years from the date the refund was due; otherwise the complaint may be rejected. `CON-6`\n- Keep all emails and the booking receipt as evidence; they will support your claim of a refund deficiency under the Act. `CON-2`\n\n#### Verified sources used\n- `CON-2` **Section 2(11), Consumer Protection Act, 2019**: Deficiency in service ([source](https://www.indiacode.nic.in/handle/123456789/15256))\n- `CON-3` **Section 35, Consumer Protection Act, 2019**: Filing a complaint with the District Commission ([source](https://e-jagriti.gov.in/)) _Caveat: Portal names change; tell the user to check e-jagriti.gov.in._\n- `CON-4` **Consumer Protection (Jurisdiction) Rules, 2021**: Which commission (by amount paid) ([source](https://www.scconline.com/blog/post/2022/01/03/pecuniary-jurisdiction-of-district-state-and-national-commissions-revised-vide-consumer-protection-jurisdiction-of-the-district-commission-the-state-commission-and-the-national-commission-rules-2/)) _Caveat: Based on value of goods/services paid, not compensation claimed._\n- `CON-5` **Rule 7, Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020**: Filing fee ([source](https://e-jagriti.gov.in/)) _Caveat: Fee table as amended in 2022; check the portal for the current fee._\n- `CON-6` **Section 69, Consumer Protection Act, 2019**: Time limit: 2 years ([source](https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/69.php))\n- `CON-8` **National Consumer Helpline (1915)**: Free pre-litigation helpline ([source](https://consumerhelpline.gov.in/public/contact))\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "followup",
+      "meta": {
+        "points": [
+          {
+            "text": "Call the National Consumer Helpline (1915 or WhatsApp 8800001915) to lodge a complaint and seek a refund before formal filing.",
+            "kb_ids": [
+              "CON-8"
+            ]
+          },
+          {
+            "text": "Since you paid Rs 1.2 lakh, the complaint falls under the District Consumer Commission; you can file online via the e-Jagriti portal (e-jagriti.gov.in) without a lawyer.",
+            "kb_ids": [
+              "CON-3",
+              "CON-4"
+            ]
+          },
+          {
+            "text": "No filing fee is required for amounts up to Rs 5 lakh, so you can file without paying any fee.",
+            "kb_ids": [
+              "CON-5"
+            ]
+          },
+          {
+            "text": "You must file within 2 years from the date the refund was due; otherwise the complaint may be rejected.",
+            "kb_ids": [
+              "CON-6"
+            ]
+          },
+          {
+            "text": "Keep all emails and the booking receipt as evidence; they will support your claim of a refund deficiency under the Act.",
+            "kb_ids": [
+              "CON-2"
+            ]
+          }
+        ],
+        "safety_notes": []
+      }
+    },
+    {
+      "role": "user",
+      "content": "That's all I know. What should I do now?"
+    },
+    {
+      "role": "assistant",
+      "content": "- Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to lodge a complaint and seek a refund before formal filing. `CON-8`\n- File a complaint with the District Consumer Commission online via the e-Jagriti portal (e-jagriti.gov.in). The amount paid (Rs 1.2 lakh) falls under the District Commission. `CON-3``CON-4`\n- No filing fee is required for amounts up to Rs 5 lakh, so you can file without paying any fee. `CON-5`\n- Keep all emails, the booking receipt and any other evidence handy; file the complaint within 2 years from the date the refund was due. `CON-6`\n\n#### Verified sources used\n- `CON-3` **Section 35, Consumer Protection Act, 2019**: Filing a complaint with the District Commission ([source](https://e-jagriti.gov.in/)) _Caveat: Portal names change; tell the user to check e-jagriti.gov.in._\n- `CON-4` **Consumer Protection (Jurisdiction) Rules, 2021**: Which commission (by amount paid) ([source](https://www.scconline.com/blog/post/2022/01/03/pecuniary-jurisdiction-of-district-state-and-national-commissions-revised-vide-consumer-protection-jurisdiction-of-the-district-commission-the-state-commission-and-the-national-commission-rules-2/)) _Caveat: Based on value of goods/services paid, not compensation claimed._\n- `CON-5` **Rule 7, Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020**: Filing fee ([source](https://e-jagriti.gov.in/)) _Caveat: Fee table as amended in 2022; check the portal for the current fee._\n- `CON-6` **Section 69, Consumer Protection Act, 2019**: Time limit: 2 years ([source](https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/69.php))\n- `CON-8` **National Consumer Helpline (1915)**: Free pre-litigation helpline ([source](https://consumerhelpline.gov.in/public/contact))\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "followup",
+      "meta": {
+        "points": [
+          {
+            "text": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to lodge a complaint and seek a refund before formal filing.",
+            "kb_ids": [
+              "CON-8"
+            ]
+          },
+          {
+            "text": "File a complaint with the District Consumer Commission online via the e-Jagriti portal (e-jagriti.gov.in). The amount paid (Rs 1.2 lakh) falls under the District Commission.",
+            "kb_ids": [
+              "CON-3",
+              "CON-4"
+            ]
+          },
+          {
+            "text": "No filing fee is required for amounts up to Rs 5 lakh, so you can file without paying any fee.",
+            "kb_ids": [
+              "CON-5"
+            ]
+          },
+          {
+            "text": "Keep all emails, the booking receipt and any other evidence handy; file the complaint within 2 years from the date the refund was due.",
+            "kb_ids": [
+              "CON-6"
+            ]
+          }
+        ],
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 10.52,
+      "prompt_tokens": 469,
+      "completion_tokens": 129
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 6.23,
+      "prompt_tokens": 651,
+      "completion_tokens": 476
+    },
+    {
+      "name": "advise",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 17.44,
+      "prompt_tokens": 1819,
+      "completion_tokens": 706
+    },
+    {
+      "name": "followup",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 15.46,
+      "prompt_tokens": 1635,
+      "completion_tokens": 690
+    },
+    {
+      "name": "followup",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 11.23,
+      "prompt_tokens": 1804,
+      "completion_tokens": 371
+    }
+  ],
+  "model": "groq/openai/gpt-oss-20b"
+}

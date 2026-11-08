@@ -1,0 +1,344 @@
+{
+  "test_case": {
+    "id": "02_deposit_hinglish_messy",
+    "category": "messy input",
+    "turns": [
+      "bhai mera landlord deposit nahi de raha. 2 mahine ho gaye flat chhode. bahut tension hai, kya karu",
+      "deposit 40 hazaar tha, august ke end mein chhoda tha. woh bol raha hai kitchen kharab kar diya, jo jhooth hai",
+      "agreement hai, aur paise bank transfer kiye the. aur kuch nahi pata"
+    ],
+    "expect": {
+      "issue": "deposit",
+      "escalation": "none",
+      "language": "hinglish",
+      "stage": "advised"
+    }
+  },
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "stage": true,
+    "language": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "seconds": 54.8,
+  "language": "hinglish",
+  "issue": "deposit",
+  "stage": "advised",
+  "case": {
+    "deposit_amount": 40000.0,
+    "amount_withheld": 40000.0,
+    "move_out_date": "2026-08",
+    "landlord_reason": "kitchen kharab kar diya",
+    "proof_available": [
+      "agreement",
+      "bank transfer"
+    ],
+    "written_agreement": true
+  },
+  "unknown": [],
+  "triage": {
+    "issue_type": "deposit",
+    "language": "hinglish",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "User's landlord hasn't returned deposit after leaving flat for 2 months."
+  },
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": {
+    "summary": "Aapne 40,000 rupees ka deposit diya, landlord ne wapas nahi kiya aur kah raha hai ki kitchen kharab hua. Aapke paas agreement aur bank transfer ka proof hai. Yeh civil dispute hai aur aapke paas 3 saal ka time limit hai.",
+    "points": [
+      {
+        "text": "Deposit withheld despite no damage claim.",
+        "kb_ids": [
+          "DEP-1"
+        ]
+      },
+      {
+        "text": "Landlord breached the rent contract.",
+        "kb_ids": [
+          "DEP-2"
+        ]
+      },
+      {
+        "text": "Model Tenancy Act applies only if your state has adopted it.",
+        "kb_ids": [
+          "DEP-1"
+        ]
+      },
+      {
+        "text": "Legal notice is the first step.",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      },
+      {
+        "text": "If no response, file a money recovery case in local civil court.",
+        "kb_ids": [
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "Free legal aid available via NALSA helpline 15100.",
+        "kb_ids": [
+          "DEP-6"
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "text": "1. Send a written notice to landlord via registered post/email/WhatsApp.",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      },
+      {
+        "text": "2. Keep proof of notice (receipt, screenshots).",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      },
+      {
+        "text": "3. If landlord still refuses, file a money recovery case in the local civil court within 3 years.",
+        "kb_ids": [
+          "DEP-3",
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "4. If you cannot afford a lawyer, call NALSA helpline 15100 for free legal aid.",
+        "kb_ids": [
+          "DEP-6"
+        ]
+      }
+    ],
+    "dont_know": [
+      "Is your state adopted the Model Tenancy Act?"
+    ],
+    "lawyer_reason": "You are within the 3-year limitation period and the dispute is civil; you can handle the notice and court filing yourself. A lawyer is needed only if the case escalates or you need representation.",
+    "needs_lawyer": false,
+    "facts": [
+      "It has been about 99 days since you moved out (2026-08-01).",
+      "Amount to claim: Rs 40,000."
+    ],
+    "cited": [
+      "DEP-1",
+      "DEP-2",
+      "DEP-3",
+      "DEP-4",
+      "DEP-5",
+      "DEP-6"
+    ],
+    "confidence": "medium",
+    "confidence_why": [
+      "some sources are model laws or recently changed laws (see caveats)"
+    ],
+    "safety_notes": []
+  },
+  "notice": null,
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "bhai mera landlord deposit nahi de raha. 2 mahine ho gaye flat chhode. bahut tension hai, kya karu"
+    },
+    {
+      "role": "assistant",
+      "content": "Bhai, samajh sakta hoon.\n1. Aapne total kitna deposit (INR) diya?\n2. Aapne flat kab chhoda (YYYY-MM-DD ya YYYY-MM)?\n\nAgar pata nahi ho toh “don’t know” likh dein.",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "deposit_amount",
+          "move_out_date"
+        ],
+        "case": {}
+      }
+    },
+    {
+      "role": "user",
+      "content": "deposit 40 hazaar tha, august ke end mein chhoda tha. woh bol raha hai kitchen kharab kar diya, jo jhooth hai"
+    },
+    {
+      "role": "assistant",
+      "content": "Mujhe samajh aa raha hai ki aapko tension ho rahi hai.\nKya aapke paas koi agreement, receipt, screenshot ya message hai jo aapke claim ko support kare?\nAur kya aapke paas koi photo ya video hai jo kitchen ki condition dikhata ho?",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "proof_available"
+        ],
+        "case": {
+          "deposit_amount": 40000.0,
+          "amount_withheld": 40000.0,
+          "move_out_date": "2026-08",
+          "landlord_reason": "kitchen kharab kar diya"
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "agreement hai, aur paise bank transfer kiye the. aur kuch nahi pata"
+    },
+    {
+      "role": "assistant",
+      "content": "Aapne 40,000 rupees ka deposit diya, landlord ne wapas nahi kiya aur kah raha hai ki kitchen kharab hua. Aapke paas agreement aur bank transfer ka proof hai. Yeh civil dispute hai aur aapke paas 3 saal ka time limit hai.\n\n#### Aapki situation\n- Deposit withheld despite no damage claim. `DEP-1`\n- Landlord breached the rent contract. `DEP-2`\n- Model Tenancy Act applies only if your state has adopted it. `DEP-1`\n- Legal notice is the first step. `DEP-4`\n- If no response, file a money recovery case in local civil court. `DEP-5`\n- Free legal aid available via NALSA helpline 15100. `DEP-6`\n\n#### Aage kya karein\n1. 1. Send a written notice to landlord via registered post/email/WhatsApp. `DEP-4`\n2. 2. Keep proof of notice (receipt, screenshots). `DEP-4`\n3. 3. If landlord still refuses, file a money recovery case in the local civil court within 3 years. `DEP-3``DEP-5`\n4. 4. If you cannot afford a lawyer, call NALSA helpline 15100 for free legal aid. `DEP-6`\n\n#### Aapki details se calculation\n- It has been about 99 days since you moved out (2026-08-01).\n- Amount to claim: Rs 40,000.\n\n#### Ye proof ready rakhein\n- Rent agreement (even unregistered or a WhatsApp/email agreement)\n- Proof deposit was paid (bank transfer / UPI screenshot / receipt)\n- Proof you vacated and handed over keys (message, photos, handover note)\n- Move-out photos/videos of the flat's condition\n- All messages with landlord about the refund\n\n#### Vakeel kab chahiye\nAap shayad khud shuru kar sakte hain. Vakeel se milein agar:\nYou are within the 3-year limitation period and the dispute is civil; you can handle the notice and court filing yourself. A lawyer is needed only if the case escalates or you need representation.\n- Landlord has filed a case or police complaint against you\n- Close to 3 years since you vacated\n- Amount is very large or there is a dispute about property ownership\n- Landlord threatens you physically\n\n#### Jiske baare mein main pakka nahi hoon\n- Is your state adopted the Model Tenancy Act?\n\n#### Verified sources\n- `DEP-1` **Section 11, Model Tenancy Act, 2021**: Deposit cap and refund on vacating ([source](https://revenue.py.gov.in/downloads/notification/Model%20Tenancy%20Act.pdf)) _Caveat: Model law: it binds only in states/UTs that have enacted it. Many states still follow their own rent control law, and then the rent agreement terms decide refund timing._\n- `DEP-2` **Section 73, Indian Contract Act, 1872**: Compensation when a contract is broken ([source](https://www.indiacode.nic.in/handle/123456789/2187)) _Caveat: Compensation for indirect or remote losses is not allowed._\n- `DEP-3` **Limitation Act, 1963**: Time limit to file a money recovery case ([source](https://www.indiacode.nic.in/handle/123456789/1565)) _Caveat: The exact starting point depends on facts; near the 3-year mark a lawyer must check._\n- `DEP-4` **Practice: legal notice before a case**: Send a written legal notice first\n- `DEP-5` **Practice: civil court / Small Causes Court recovery**: Where to file if the notice fails _Caveat: Which court depends on the city/state and amount; do not name a specific court as certain._\n- `DEP-6` **Legal Services Authorities Act, 1987**: Free legal aid and Lok Adalat ([source](https://nalsa.gov.in/)) _Caveat: Eligibility income limits differ by state._\n\n**Confidence:** 🟡 Medium (some sources are model laws or recently changed laws (see caveats))\n\nAap aur sawaal pooch sakte hain, **legal notice** ka draft banwa sakte hain, ya doosri party se baat karne ki **practice** kar sakte hain.\n\n_Ye legal information hai, legal advice nahi. Ye sirf upar diye verified sources pe based hai. Court ka maamla ho ya badi rakam ho to vakeel se baat karein (free: NALSA 15100)._",
+      "kind": "advice",
+      "meta": {
+        "advice": {
+          "summary": "Aapne 40,000 rupees ka deposit diya, landlord ne wapas nahi kiya aur kah raha hai ki kitchen kharab hua. Aapke paas agreement aur bank transfer ka proof hai. Yeh civil dispute hai aur aapke paas 3 saal ka time limit hai.",
+          "points": [
+            {
+              "text": "Deposit withheld despite no damage claim.",
+              "kb_ids": [
+                "DEP-1"
+              ]
+            },
+            {
+              "text": "Landlord breached the rent contract.",
+              "kb_ids": [
+                "DEP-2"
+              ]
+            },
+            {
+              "text": "Model Tenancy Act applies only if your state has adopted it.",
+              "kb_ids": [
+                "DEP-1"
+              ]
+            },
+            {
+              "text": "Legal notice is the first step.",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            },
+            {
+              "text": "If no response, file a money recovery case in local civil court.",
+              "kb_ids": [
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "Free legal aid available via NALSA helpline 15100.",
+              "kb_ids": [
+                "DEP-6"
+              ]
+            }
+          ],
+          "next_steps": [
+            {
+              "text": "1. Send a written notice to landlord via registered post/email/WhatsApp.",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            },
+            {
+              "text": "2. Keep proof of notice (receipt, screenshots).",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            },
+            {
+              "text": "3. If landlord still refuses, file a money recovery case in the local civil court within 3 years.",
+              "kb_ids": [
+                "DEP-3",
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "4. If you cannot afford a lawyer, call NALSA helpline 15100 for free legal aid.",
+              "kb_ids": [
+                "DEP-6"
+              ]
+            }
+          ],
+          "dont_know": [
+            "Is your state adopted the Model Tenancy Act?"
+          ],
+          "lawyer_reason": "You are within the 3-year limitation period and the dispute is civil; you can handle the notice and court filing yourself. A lawyer is needed only if the case escalates or you need representation.",
+          "needs_lawyer": false,
+          "facts": [
+            "It has been about 99 days since you moved out (2026-08-01).",
+            "Amount to claim: Rs 40,000."
+          ],
+          "cited": [
+            "DEP-1",
+            "DEP-2",
+            "DEP-3",
+            "DEP-4",
+            "DEP-5",
+            "DEP-6"
+          ],
+          "confidence": "medium",
+          "confidence_why": [
+            "some sources are model laws or recently changed laws (see caveats)"
+          ],
+          "safety_notes": []
+        },
+        "case": {
+          "deposit_amount": 40000.0,
+          "amount_withheld": 40000.0,
+          "move_out_date": "2026-08",
+          "landlord_reason": "kitchen kharab kar diya",
+          "proof_available": [
+            "agreement",
+            "bank transfer"
+          ],
+          "written_agreement": true
+        }
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 10.0,
+      "prompt_tokens": 454,
+      "completion_tokens": 183
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 5.83,
+      "prompt_tokens": 639,
+      "completion_tokens": 525
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 1.9,
+      "prompt_tokens": 265,
+      "completion_tokens": 280
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 7.69,
+      "prompt_tokens": 671,
+      "completion_tokens": 914
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 8.24,
+      "prompt_tokens": 279,
+      "completion_tokens": 407
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 9.06,
+      "prompt_tokens": 732,
+      "completion_tokens": 436
+    },
+    {
+      "name": "advise",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 12.05,
+      "prompt_tokens": 1732,
+      "completion_tokens": 1136
+    }
+  ],
+  "model": "groq/openai/gpt-oss-20b"
+}

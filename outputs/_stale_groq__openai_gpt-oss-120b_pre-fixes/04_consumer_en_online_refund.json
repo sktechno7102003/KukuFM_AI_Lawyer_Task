@@ -1,0 +1,359 @@
+{
+  "case": {
+    "communication_so_far": "Customer care keeps saying 'in process'",
+    "product_or_service": "laptop",
+    "amount_paid": 32999.0,
+    "purchase_date": "2026-08-25",
+    "problem": "Refund not received after returning laptop with cracked screen",
+    "order_id": "OD12345",
+    "complained_to_seller": true,
+    "proof_available": [
+      "ticket numbers",
+      "invoice",
+      "photos of the crack",
+      "pickup confirmation email"
+    ]
+  },
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "stage": true,
+    "language": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "en",
+  "issue": "consumer",
+  "stage": "advised",
+  "unknown": [
+    "seller_or_platform"
+  ],
+  "triage": {
+    "issue_type": "consumer",
+    "language": "en",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "User hasn't received refund for a returned laptop with a cracked screen"
+  },
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": {
+    "summary": "You bought a laptop for Rs 32,999, returned it because the screen was cracked, and the seller still hasn't refunded you. You are a consumer and can seek redress within 2 years, with no filing fee, at the District Consumer Commission.",
+    "points": [
+      {
+        "text": "You are a consumer under the Consumer Protection Act, 2019.",
+        "kb_ids": [
+          "CON-1"
+        ]
+      },
+      {
+        "text": "The failure to refund after returning the laptop is a deficiency in service.",
+        "kb_ids": [
+          "CON-2"
+        ]
+      },
+      {
+        "text": "A complaint must be filed within 2 years of the problem arising.",
+        "kb_ids": [
+          "CON-6"
+        ]
+      },
+      {
+        "text": "Since you paid Rs 32,999, the appropriate forum is the District Consumer Commission and there is no filing fee.",
+        "kb_ids": [
+          "CON-4",
+          "CON-5"
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "text": "If you bought the laptop on an e-commerce platform, contact its grievance officer (details shown on the site/app) and ask for a written acknowledgment within 48 hours and resolution within one month.",
+        "kb_ids": [
+          "CON-7"
+        ]
+      },
+      {
+        "text": "Call the free National Consumer Helpline (1915) or WhatsApp 8800001915. They will forward your complaint to the seller and often obtain a refund without court action.",
+        "kb_ids": [
+          "CON-8"
+        ]
+      },
+      {
+        "text": "If the issue remains unresolved, file a complaint online with the District Consumer Commission via the e-Jagriti portal (e-jagriti.gov.in). No lawyer is required, and the filing fee is zero for your amount.",
+        "kb_ids": [
+          "CON-3",
+          "CON-5",
+          "CON-4"
+        ]
+      }
+    ],
+    "dont_know": [
+      "Exact name of the seller or e-commerce platform you used"
+    ],
+    "lawyer_reason": "A lawyer is not mandatory for a routine consumer complaint of this value, but you may consult one if you want help drafting the grievance notice or if the seller disputes the claim.",
+    "needs_lawyer": false,
+    "facts": [
+      "Purchase was about 75 days ago (2026-08-25). Consumer complaints must be filed within 2 years of the problem arising.",
+      "Amount paid Rs 32,999 -> District Commission; no filing fee (up to Rs 5 lakh)."
+    ],
+    "cited": [
+      "CON-1",
+      "CON-2",
+      "CON-3",
+      "CON-4",
+      "CON-5",
+      "CON-6",
+      "CON-7",
+      "CON-8"
+    ],
+    "confidence": "medium",
+    "confidence_why": [
+      "some sources are model laws or recently changed laws (see caveats)",
+      "some facts are still unknown: company / seller / platform name"
+    ],
+    "safety_notes": []
+  },
+  "notice": {
+    "markdown": "**LEGAL NOTICE**\n\n**Date:** 08 November 2026\n**Sent by:** Registered Post A.D. / Email\n\n**From:**\n[PLACEHOLDER: Full name of the person asking]\n[PLACEHOLDER: User's postal address]\n\n**To:**\n[PLACEHOLDER: Company / seller / platform name]\n[PLACEHOLDER: Seller's address or registered office]\n\n**Subject: Notice for refund / compensation for deficiency in service and defective goods (Rs 32,999)**\n\nDear Sir/Madam,\n\nI, [PLACEHOLDER: Full name of the person asking], hereby give you this notice as follows:\n\n1. I purchased a laptop on 25 August 2026, paying Rs 32,999, and the order reference is OD12345.\n2. The laptop developed a cracked screen, and I returned it to the seller on [PLACEHOLDER: date of return].\n3. I possess proof of the return, including ticket numbers, the original invoice, photographs of the crack, and a pickup confirmation email.\n4. After returning the laptop, I requested a full refund of the amount I had paid.\n5. Despite my repeated requests, the seller’s customer-care team has only replied that the matter is “in process.”  \n6. I have formally complained to the seller, and the complaint remains unresolved.\n7. To date, I have not received any refund or further communication regarding the status of my refund.\n\n**Legal basis**\n\n- Section 2(7), Consumer Protection Act, 2019: I purchased the goods/service for a price for my personal use and am a 'consumer'.\n- Section 2(11), Consumer Protection Act, 2019: Failure to provide the promised refund/product amounts to deficiency in service and/or a defect.\n- Rule 4(5), Consumer Protection (E-Commerce) Rules, 2020: As an e-commerce entity you are required to acknowledge complaints within 48 hours and redress them within one month.\n\n\n**Demand**\n\nI hereby call upon you to refund Rs 32,999 and compensate me for the inconvenience caused.\n\nPlease make the payment within **15 days** of receiving this notice, by bank transfer/UPI to my account (details below) or by cheque, and confirm in writing.\n\nIf you fail to do so, I shall be constrained to pursue the remedies available to me in law, including filing a complaint before the District Consumer Disputes Redressal Commission, entirely at your risk as to costs and consequences.\n\nI am keeping a copy of this notice for my records.\n\nYours faithfully,\n\n[PLACEHOLDER: Full name of the person asking]\nPhone/Email: [PLACEHOLDER: your phone and email]\nBank/UPI details for payment: [PLACEHOLDER: account or UPI ID]\n\n**Documents in my possession:** ticket numbers, invoice, photos of the crack, pickup confirmation email",
+    "missing": [
+      "user_name",
+      "user_address",
+      "seller_or_platform",
+      "seller_address"
+    ],
+    "placeholders": [
+      "Company / seller / platform name",
+      "Full name of the person asking",
+      "Seller's address or registered office",
+      "User's postal address",
+      "account or UPI ID",
+      "date of return",
+      "your phone and email"
+    ],
+    "removed": []
+  },
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "I returned a Rs 32,999 laptop to an online store (order OD12345) on 2 September 2026 after it arrived with a cracked screen. They picked it up but the refund still hasn't come. Customer care keeps saying 'in process'. I bought it on 25 August 2026."
+    },
+    {
+      "role": "assistant",
+      "content": "I’m sorry you’re dealing with this. Could you tell me the name of the seller or platform you bought the laptop from? (If you’re not sure, just let me know.)",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "seller_or_platform"
+        ],
+        "case": {
+          "communication_so_far": "Customer care keeps saying 'in process'",
+          "product_or_service": "laptop",
+          "amount_paid": 32999.0,
+          "purchase_date": "2026-08-25",
+          "problem": "Refund not received after returning laptop with cracked screen",
+          "order_id": "OD12345",
+          "complained_to_seller": true
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "Yes I complained 4 times on chat, I have ticket numbers, the invoice, photos of the crack and the pickup confirmation email."
+    },
+    {
+      "role": "assistant",
+      "content": "You bought a laptop for Rs 32,999, returned it because the screen was cracked, and the seller still hasn't refunded you. You are a consumer and can seek redress within 2 years, with no filing fee, at the District Consumer Commission.\n\n#### Where you stand\n- You are a consumer under the Consumer Protection Act, 2019. `CON-1`\n- The failure to refund after returning the laptop is a deficiency in service. `CON-2`\n- A complaint must be filed within 2 years of the problem arising. `CON-6`\n- Since you paid Rs 32,999, the appropriate forum is the District Consumer Commission and there is no filing fee. `CON-4``CON-5`\n\n#### What you can do next\n1. If you bought the laptop on an e-commerce platform, contact its grievance officer (details shown on the site/app) and ask for a written acknowledgment within 48 hours and resolution within one month. `CON-7`\n2. Call the free National Consumer Helpline (1915) or WhatsApp 8800001915. They will forward your complaint to the seller and often obtain a refund without court action. `CON-8`\n3. If the issue remains unresolved, file a complaint online with the District Consumer Commission via the e-Jagriti portal (e-jagriti.gov.in). No lawyer is required, and the filing fee is zero for your amount. `CON-3``CON-5``CON-4`\n\n#### Calculated from your details\n- Purchase was about 75 days ago (2026-08-25). Consumer complaints must be filed within 2 years of the problem arising.\n- Amount paid Rs 32,999 -> District Commission; no filing fee (up to Rs 5 lakh).\n\n#### Proof to keep ready\n- Order ID / invoice / bill\n- Payment proof (bank/UPI/card statement)\n- Screenshots of the product listing and promises made\n- Photos/videos of the defect\n- All emails, chats and complaint/ticket numbers with the seller or platform\n\n#### When to see a lawyer\nYou can likely start on your own. See a lawyer if:\nA lawyer is not mandatory for a routine consumer complaint of this value, but you may consult one if you want help drafting the grievance notice or if the seller disputes the claim.\n- Amount above Rs 50 lakh (State/National Commission)\n- Close to or past the 2-year limit\n- Injury caused by a product\n- Money taken through a scam/fraud (this is a cyber-crime matter: call 1930)\n\n#### What I'm not sure about\n- Exact name of the seller or e-commerce platform you used\n\n#### Verified sources used\n- `CON-1` **Section 2(7), Consumer Protection Act, 2019**: Who is a consumer ([source](https://www.indiacode.nic.in/handle/123456789/15256)) _Caveat: Purchases for business/resale may not qualify._\n- `CON-2` **Section 2(11), Consumer Protection Act, 2019**: Deficiency in service ([source](https://www.indiacode.nic.in/handle/123456789/15256))\n- `CON-3` **Section 35, Consumer Protection Act, 2019**: Filing a complaint with the District Commission ([source](https://e-jagriti.gov.in/)) _Caveat: Portal names change; tell the user to check e-jagriti.gov.in._\n- `CON-4` **Consumer Protection (Jurisdiction) Rules, 2021**: Which commission (by amount paid) ([source](https://www.scconline.com/blog/post/2022/01/03/pecuniary-jurisdiction-of-district-state-and-national-commissions-revised-vide-consumer-protection-jurisdiction-of-the-district-commission-the-state-commission-and-the-national-commission-rules-2/)) _Caveat: Based on value of goods/services paid, not compensation claimed._\n- `CON-5` **Rule 7, Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020**: Filing fee ([source](https://e-jagriti.gov.in/)) _Caveat: Fee table as amended in 2022; check the portal for the current fee._\n- `CON-6` **Section 69, Consumer Protection Act, 2019**: Time limit: 2 years ([source](https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/69.php))\n- `CON-7` **Rule 4(5), Consumer Protection (E-Commerce) Rules, 2020**: Online platforms must answer complaints ([source](https://www.lkslaw.com/insights/news/e-commerce-consumer-protection-e-commerce-rules-2020-notified))\n- `CON-8` **National Consumer Helpline (1915)**: Free pre-litigation helpline ([source](https://consumerhelpline.gov.in/public/contact))\n\n**Confidence:** 🟡 Medium (some sources are model laws or recently changed laws (see caveats); some facts are still unknown: company / seller / platform name)\n\nYou can ask me follow-up questions, generate a **legal notice** draft, or **practise** talking to the other side.\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "advice",
+      "meta": {
+        "advice": {
+          "summary": "You bought a laptop for Rs 32,999, returned it because the screen was cracked, and the seller still hasn't refunded you. You are a consumer and can seek redress within 2 years, with no filing fee, at the District Consumer Commission.",
+          "points": [
+            {
+              "text": "You are a consumer under the Consumer Protection Act, 2019.",
+              "kb_ids": [
+                "CON-1"
+              ]
+            },
+            {
+              "text": "The failure to refund after returning the laptop is a deficiency in service.",
+              "kb_ids": [
+                "CON-2"
+              ]
+            },
+            {
+              "text": "A complaint must be filed within 2 years of the problem arising.",
+              "kb_ids": [
+                "CON-6"
+              ]
+            },
+            {
+              "text": "Since you paid Rs 32,999, the appropriate forum is the District Consumer Commission and there is no filing fee.",
+              "kb_ids": [
+                "CON-4",
+                "CON-5"
+              ]
+            }
+          ],
+          "next_steps": [
+            {
+              "text": "If you bought the laptop on an e-commerce platform, contact its grievance officer (details shown on the site/app) and ask for a written acknowledgment within 48 hours and resolution within one month.",
+              "kb_ids": [
+                "CON-7"
+              ]
+            },
+            {
+              "text": "Call the free National Consumer Helpline (1915) or WhatsApp 8800001915. They will forward your complaint to the seller and often obtain a refund without court action.",
+              "kb_ids": [
+                "CON-8"
+              ]
+            },
+            {
+              "text": "If the issue remains unresolved, file a complaint online with the District Consumer Commission via the e-Jagriti portal (e-jagriti.gov.in). No lawyer is required, and the filing fee is zero for your amount.",
+              "kb_ids": [
+                "CON-3",
+                "CON-5",
+                "CON-4"
+              ]
+            }
+          ],
+          "dont_know": [
+            "Exact name of the seller or e-commerce platform you used"
+          ],
+          "lawyer_reason": "A lawyer is not mandatory for a routine consumer complaint of this value, but you may consult one if you want help drafting the grievance notice or if the seller disputes the claim.",
+          "needs_lawyer": false,
+          "facts": [
+            "Purchase was about 75 days ago (2026-08-25). Consumer complaints must be filed within 2 years of the problem arising.",
+            "Amount paid Rs 32,999 -> District Commission; no filing fee (up to Rs 5 lakh)."
+          ],
+          "cited": [
+            "CON-1",
+            "CON-2",
+            "CON-3",
+            "CON-4",
+            "CON-5",
+            "CON-6",
+            "CON-7",
+            "CON-8"
+          ],
+          "confidence": "medium",
+          "confidence_why": [
+            "some sources are model laws or recently changed laws (see caveats)",
+            "some facts are still unknown: company / seller / platform name"
+          ],
+          "safety_notes": []
+        },
+        "case": {
+          "communication_so_far": "Customer care keeps saying 'in process'",
+          "product_or_service": "laptop",
+          "amount_paid": 32999.0,
+          "purchase_date": "2026-08-25",
+          "problem": "Refund not received after returning laptop with cracked screen",
+          "order_id": "OD12345",
+          "complained_to_seller": true,
+          "proof_available": [
+            "ticket numbers",
+            "invoice",
+            "photos of the crack",
+            "pickup confirmation email"
+          ]
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "That's all I know. What should I do now?"
+    },
+    {
+      "role": "assistant",
+      "content": "- Raise the issue with the e-commerce platform’s grievance officer (contact shown on the site/app); they must acknowledge within 48 hrs and resolve within a month. `CON-7`\n- If the platform does not resolve, call the free National Consumer Helpline (1915 or WhatsApp 8800001915); they will forward your complaint to the seller and often obtain refunds. `CON-8`\n- File a consumer complaint with the District Consumer Commission (value ≤ Rs 50 lakh) via the e-Jagriti portal (e-jagriti.gov.in); a lawyer is not compulsory and there is no filing fee for amounts up to Rs 5 lakh. `CON-3``CON-4``CON-5`\n- Do this within 2 years from the date you returned the laptop (28 Sept 2026) as required by law; keep all tickets, invoice, photos and pickup email as evidence. `CON-6``CON-2``CON-1`\n\n#### Verified sources used\n- `CON-1` **Section 2(7), Consumer Protection Act, 2019**: Who is a consumer ([source](https://www.indiacode.nic.in/handle/123456789/15256)) _Caveat: Purchases for business/resale may not qualify._\n- `CON-2` **Section 2(11), Consumer Protection Act, 2019**: Deficiency in service ([source](https://www.indiacode.nic.in/handle/123456789/15256))\n- `CON-3` **Section 35, Consumer Protection Act, 2019**: Filing a complaint with the District Commission ([source](https://e-jagriti.gov.in/)) _Caveat: Portal names change; tell the user to check e-jagriti.gov.in._\n- `CON-4` **Consumer Protection (Jurisdiction) Rules, 2021**: Which commission (by amount paid) ([source](https://www.scconline.com/blog/post/2022/01/03/pecuniary-jurisdiction-of-district-state-and-national-commissions-revised-vide-consumer-protection-jurisdiction-of-the-district-commission-the-state-commission-and-the-national-commission-rules-2/)) _Caveat: Based on value of goods/services paid, not compensation claimed._\n- `CON-5` **Rule 7, Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020**: Filing fee ([source](https://e-jagriti.gov.in/)) _Caveat: Fee table as amended in 2022; check the portal for the current fee._\n- `CON-6` **Section 69, Consumer Protection Act, 2019**: Time limit: 2 years ([source](https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/69.php))\n- `CON-7` **Rule 4(5), Consumer Protection (E-Commerce) Rules, 2020**: Online platforms must answer complaints ([source](https://www.lkslaw.com/insights/news/e-commerce-consumer-protection-e-commerce-rules-2020-notified))\n- `CON-8` **National Consumer Helpline (1915)**: Free pre-litigation helpline ([source](https://consumerhelpline.gov.in/public/contact))\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "followup",
+      "meta": {
+        "points": [
+          {
+            "text": "Raise the issue with the e-commerce platform’s grievance officer (contact shown on the site/app); they must acknowledge within 48 hrs and resolve within a month.",
+            "kb_ids": [
+              "CON-7"
+            ]
+          },
+          {
+            "text": "If the platform does not resolve, call the free National Consumer Helpline (1915 or WhatsApp 8800001915); they will forward your complaint to the seller and often obtain refunds.",
+            "kb_ids": [
+              "CON-8"
+            ]
+          },
+          {
+            "text": "File a consumer complaint with the District Consumer Commission (value ≤ Rs 50 lakh) via the e-Jagriti portal (e-jagriti.gov.in); a lawyer is not compulsory and there is no filing fee for amounts up to Rs 5 lakh.",
+            "kb_ids": [
+              "CON-3",
+              "CON-4",
+              "CON-5"
+            ]
+          },
+          {
+            "text": "Do this within 2 years from the date you returned the laptop (28 Sept 2026) as required by law; keep all tickets, invoice, photos and pickup email as evidence.",
+            "kb_ids": [
+              "CON-6",
+              "CON-2",
+              "CON-1"
+            ]
+          }
+        ],
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 6.9,
+      "prompt_tokens": 489,
+      "completion_tokens": 86
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 4.49,
+      "prompt_tokens": 592,
+      "completion_tokens": 412
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 0.86,
+      "prompt_tokens": 266,
+      "completion_tokens": 193
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 6.6,
+      "prompt_tokens": 695,
+      "completion_tokens": 543
+    },
+    {
+      "name": "advise",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 17.79,
+      "prompt_tokens": 1850,
+      "completion_tokens": 914
+    },
+    {
+      "name": "followup",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 20.95,
+      "prompt_tokens": 1736,
+      "completion_tokens": 816
+    },
+    {
+      "name": "doc_facts",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 7.67,
+      "prompt_tokens": 326,
+      "completion_tokens": 546
+    }
+  ],
+  "model": "groq/openai/gpt-oss-120b"
+}

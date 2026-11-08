@@ -1,0 +1,263 @@
+{
+  "case": {
+    "unpaid_period": "2026-10",
+    "amount_due": 40000.0,
+    "still_employed": true,
+    "proof_available": [
+      "salary slips",
+      "bank statements"
+    ]
+  },
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "language": true,
+    "not:Payment of Wages Act": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "en",
+  "issue": "salary",
+  "stage": "advised",
+  "unknown": [],
+  "triage": {
+    "issue_type": "salary",
+    "language": "en",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "Employer hasn't paid October 2026 salary of Rs 40,000."
+  },
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": {
+    "summary": "Your employer has not paid your October salary of Rs 40,000. Under the Code on Wages, monthly salary must be paid before the 7th of the next month, so the payment is overdue and the employer is in breach of contract.",
+    "points": [
+      {
+        "text": "The employer owes you the October salary and is violating the Code on Wages (salary due before 7th) and your employment contract.",
+        "kb_ids": [
+          "SAL-1",
+          "SAL-3"
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "text": "Send a written demand (email and registered post) asking for the unpaid salary.",
+        "kb_ids": [
+          "SAL-4"
+        ]
+      },
+      {
+        "text": "If the demand is ignored, file a wage claim with the Labour Commissioner or the appropriate labour authority within 3 years of the due date.",
+        "kb_ids": [
+          "SAL-2",
+          "SAL-4"
+        ]
+      },
+      {
+        "text": "If you need help, call NALSA free legal aid helpline 15100 for a lawyer or assistance.",
+        "kb_ids": [
+          "SAL-5"
+        ]
+      }
+    ],
+    "dont_know": [],
+    "lawyer_reason": "This is a routine unpaid-salary dispute; you can start with a notice and labour-office claim. See a lawyer if the employer contests the claim or you need to file a civil suit.",
+    "needs_lawyer": false,
+    "facts": [
+      "Amount to claim: Rs 40,000.",
+      "You are still employed: monthly salary is due before the 7th of the following month."
+    ],
+    "cited": [
+      "SAL-1",
+      "SAL-2",
+      "SAL-3",
+      "SAL-4",
+      "SAL-5"
+    ],
+    "confidence": "medium",
+    "confidence_why": [
+      "some sources are model laws or recently changed laws (see caveats)"
+    ],
+    "safety_notes": []
+  },
+  "notice": null,
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "Under the Payment of Wages Act 1936, how many days does my employer have to pay my salary? They have not paid me Rs 40,000 for October 2026. I still work there."
+    },
+    {
+      "role": "assistant",
+      "content": "I understand this is frustrating. Do you have any documents—like your employment agreement, payslip, or messages—showing the Rs 40,000 salary for October 2026? If yes, could you describe what you have (e.g., screenshots, emails, bank statements)? Feel free to say “don’t know” if you don’t have anything.",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "proof_available"
+        ],
+        "case": {
+          "unpaid_period": "2026-10",
+          "amount_due": 40000.0,
+          "still_employed": true
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "I have salary slips and bank statements of earlier months."
+    },
+    {
+      "role": "assistant",
+      "content": "Your employer has not paid your October salary of Rs 40,000. Under the Code on Wages, monthly salary must be paid before the 7th of the next month, so the payment is overdue and the employer is in breach of contract.\n\n#### Where you stand\n- The employer owes you the October salary and is violating the Code on Wages (salary due before 7th) and your employment contract. `SAL-1``SAL-3`\n\n#### What you can do next\n1. Send a written demand (email and registered post) asking for the unpaid salary. `SAL-4`\n2. If the demand is ignored, file a wage claim with the Labour Commissioner or the appropriate labour authority within 3 years of the due date. `SAL-2``SAL-4`\n3. If you need help, call NALSA free legal aid helpline 15100 for a lawyer or assistance. `SAL-5`\n\n#### Calculated from your details\n- Amount to claim: Rs 40,000.\n- You are still employed: monthly salary is due before the 7th of the following month.\n\n#### Proof to keep ready\n- Offer/appointment letter or any document showing salary\n- Past salary slips and bank statements showing earlier salary credits\n- Attendance records, emails or work you did in the unpaid period\n- Resignation/termination letter and relieving date (if you left)\n- Messages where the employer admits or promises to pay\n\n#### When to see a lawyer\nYou can likely start on your own. See a lawyer if:\nThis is a routine unpaid-salary dispute; you can start with a notice and labour-office claim. See a lawyer if the employer contests the claim or you need to file a civil suit.\n- Employer has accused you of theft/misconduct or filed a police complaint\n- A salary cheque bounced (separate cheque bounce law, strict 30-day notice deadline)\n- Company is shutting down or insolvent\n- Many workers unpaid (group/union action)\n\n#### Verified sources used\n- `SAL-1` **Section 17, Code on Wages, 2019**: Deadline to pay salary ([source](https://www.livelaw.in/articles/two-working-days-code-wages-employee-final-settlement-552780)) _Caveat: The Code took effect on 21 Nov 2025 but some central/state rules are still being notified, so enforcement details may differ by state. Whether the 2 days count from resignation or last working day is debated._\n- `SAL-2` **Section 45, Code on Wages, 2019**: Wage claim before the labour authority ([source](https://www.advocatekhoj.com/library/bareacts/codeonwages/45.php)) _Caveat: Which office handles it depends on your state and the type of establishment. Ask the local Labour Commissioner's office._\n- `SAL-3` **Section 73, Indian Contract Act, 1872**: Salary is a contractual promise ([source](https://www.indiacode.nic.in/handle/123456789/2187))\n- `SAL-4` **Practice: written demand + labour office**: Practical order of steps\n- `SAL-5` **Legal Services Authorities Act, 1987**: Free legal aid ([source](https://nalsa.gov.in/))\n\n**Confidence:** 🟡 Medium (some sources are model laws or recently changed laws (see caveats))\n\nYou can ask me follow-up questions, generate a **legal notice** draft, or **practise** talking to the other side.\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "advice",
+      "meta": {
+        "advice": {
+          "summary": "Your employer has not paid your October salary of Rs 40,000. Under the Code on Wages, monthly salary must be paid before the 7th of the next month, so the payment is overdue and the employer is in breach of contract.",
+          "points": [
+            {
+              "text": "The employer owes you the October salary and is violating the Code on Wages (salary due before 7th) and your employment contract.",
+              "kb_ids": [
+                "SAL-1",
+                "SAL-3"
+              ]
+            }
+          ],
+          "next_steps": [
+            {
+              "text": "Send a written demand (email and registered post) asking for the unpaid salary.",
+              "kb_ids": [
+                "SAL-4"
+              ]
+            },
+            {
+              "text": "If the demand is ignored, file a wage claim with the Labour Commissioner or the appropriate labour authority within 3 years of the due date.",
+              "kb_ids": [
+                "SAL-2",
+                "SAL-4"
+              ]
+            },
+            {
+              "text": "If you need help, call NALSA free legal aid helpline 15100 for a lawyer or assistance.",
+              "kb_ids": [
+                "SAL-5"
+              ]
+            }
+          ],
+          "dont_know": [],
+          "lawyer_reason": "This is a routine unpaid-salary dispute; you can start with a notice and labour-office claim. See a lawyer if the employer contests the claim or you need to file a civil suit.",
+          "needs_lawyer": false,
+          "facts": [
+            "Amount to claim: Rs 40,000.",
+            "You are still employed: monthly salary is due before the 7th of the following month."
+          ],
+          "cited": [
+            "SAL-1",
+            "SAL-2",
+            "SAL-3",
+            "SAL-4",
+            "SAL-5"
+          ],
+          "confidence": "medium",
+          "confidence_why": [
+            "some sources are model laws or recently changed laws (see caveats)"
+          ],
+          "safety_notes": []
+        },
+        "case": {
+          "unpaid_period": "2026-10",
+          "amount_due": 40000.0,
+          "still_employed": true,
+          "proof_available": [
+            "salary slips",
+            "bank statements"
+          ]
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "That's all I know. What should I do now?"
+    },
+    {
+      "role": "assistant",
+      "content": "- Send a written demand for the October salary (email and registered post) attaching salary slips and bank statements `SAL-4`\n- If the employer does not pay within a reasonable time, file a wage claim with the Labour Commissioner/appropriate labour office; claim must be filed within 3 years of the due date `SAL-2`\n- You can obtain a free lawyer from the District Legal Services Authority (call NALSA 15100) to help with the claim `SAL-5`\n- Keep all documents (salary slips, bank statements, demand letter) as evidence for the labour authority `SAL-1``SAL-3`\n\n**When to see a lawyer:** A lawyer (free through legal aid) will assist in preparing and presenting the wage claim before the labour authority.\n\n#### Verified sources used\n- `SAL-1` **Section 17, Code on Wages, 2019**: Deadline to pay salary ([source](https://www.livelaw.in/articles/two-working-days-code-wages-employee-final-settlement-552780)) _Caveat: The Code took effect on 21 Nov 2025 but some central/state rules are still being notified, so enforcement details may differ by state. Whether the 2 days count from resignation or last working day is debated._\n- `SAL-2` **Section 45, Code on Wages, 2019**: Wage claim before the labour authority ([source](https://www.advocatekhoj.com/library/bareacts/codeonwages/45.php)) _Caveat: Which office handles it depends on your state and the type of establishment. Ask the local Labour Commissioner's office._\n- `SAL-3` **Section 73, Indian Contract Act, 1872**: Salary is a contractual promise ([source](https://www.indiacode.nic.in/handle/123456789/2187))\n- `SAL-4` **Practice: written demand + labour office**: Practical order of steps\n- `SAL-5` **Legal Services Authorities Act, 1987**: Free legal aid ([source](https://nalsa.gov.in/))\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "followup",
+      "meta": {
+        "points": [
+          {
+            "text": "Send a written demand for the October salary (email and registered post) attaching salary slips and bank statements",
+            "kb_ids": [
+              "SAL-4"
+            ]
+          },
+          {
+            "text": "If the employer does not pay within a reasonable time, file a wage claim with the Labour Commissioner/appropriate labour office; claim must be filed within 3 years of the due date",
+            "kb_ids": [
+              "SAL-2"
+            ]
+          },
+          {
+            "text": "You can obtain a free lawyer from the District Legal Services Authority (call NALSA 15100) to help with the claim",
+            "kb_ids": [
+              "SAL-5"
+            ]
+          },
+          {
+            "text": "Keep all documents (salary slips, bank statements, demand letter) as evidence for the labour authority",
+            "kb_ids": [
+              "SAL-1",
+              "SAL-3"
+            ]
+          }
+        ],
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 8.11,
+      "prompt_tokens": 469,
+      "completion_tokens": 118
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 4.24,
+      "prompt_tokens": 566,
+      "completion_tokens": 336
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 4.16,
+      "prompt_tokens": 255,
+      "completion_tokens": 203
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 6.65,
+      "prompt_tokens": 604,
+      "completion_tokens": 426
+    },
+    {
+      "name": "advise",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 12.8,
+      "prompt_tokens": 1481,
+      "completion_tokens": 640
+    },
+    {
+      "name": "followup",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 15.29,
+      "prompt_tokens": 1399,
+      "completion_tokens": 696
+    }
+  ],
+  "model": "groq/openai/gpt-oss-120b"
+}

@@ -1,0 +1,319 @@
+{
+  "case": {
+    "seller_or_platform": "Mobile World",
+    "product_or_service": "phone",
+    "amount_paid": 22000.0,
+    "purchase_date": "2026-08-08",
+    "problem": "Screen stopped working; service center denied warranty claim citing water damage, which the user says never occurred",
+    "city": "Indore",
+    "proof_available": [
+      "bill"
+    ],
+    "communication_so_far": "Complained to service center; they denied warranty claim citing water damage."
+  },
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "stage": true,
+    "language": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "hinglish",
+  "issue": "consumer",
+  "stage": "advised",
+  "unknown": [
+    "complained_to_seller"
+  ],
+  "triage": {
+    "issue_type": "consumer",
+    "language": "hinglish",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "User's phone screen stopped working and warranty claim denied due to alleged water damage."
+  },
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": {
+    "summary": "Aapne Rs 22,000 mein phone kharida tha, 92 din baad screen kharab ho gayi aur service centre ne warranty claim ko water damage ka bahana dekar reject kar diya. Aap consumer hain aur warranty denial ek service deficiency hai, jo aapko consumer commission mein complaint file karne ka adhikar deta hai.",
+    "points": [
+      {
+        "text": "Aap consumer protection act, 2019 ke tahat consumer hain (personal use ke liye kharida).",
+        "kb_ids": [
+          "CON-1"
+        ]
+      },
+      {
+        "text": "Warranty claim ka reject hona service ki deficiency (deficiency in service) mana jata hai.",
+        "kb_ids": [
+          "CON-2"
+        ]
+      },
+      {
+        "text": "Aapka dispute Rs 22,000 ka hai, isliye District Consumer Commission mein complaint file kar sakte hain.",
+        "kb_ids": [
+          "CON-3",
+          "CON-4"
+        ]
+      },
+      {
+        "text": "Rs 5 lakh tak ki complaint ke liye koi filing fee nahi hai.",
+        "kb_ids": [
+          "CON-5"
+        ]
+      },
+      {
+        "text": "Complaint ko problem ke hone ki date se 2 saal ke andar file karna zaroori hai; aapke paas abhi kaafi samay hai.",
+        "kb_ids": [
+          "CON-6"
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "text": "National Consumer Helpline (1915) ya WhatsApp 8800001915 par call/khoj kar apni shikayat register karein; helpline aapki complaint ko seller tak pahunchati hai aur aksar refund ya repair arrange karti hai.",
+        "kb_ids": [
+          "CON-8"
+        ]
+      },
+      {
+        "text": "Agar helpline se solution na mile, to e-Jagriti portal (e-jagriti.gov.in) par District Consumer Commission ke liye online complaint file karein. Apna bill aur service centre ka response attach karein.",
+        "kb_ids": [
+          "CON-3",
+          "CON-4",
+          "CON-5",
+          "CON-6"
+        ]
+      }
+    ],
+    "dont_know": [
+      "Kya aapne seller ya platform ko likhit notice bheja hai ya unke grievance officer se contact kiya hai"
+    ],
+    "lawyer_reason": "Yeh ek routine consumer dispute hai, amount chhota hai aur 2 saal ki limit ke andar hai. Agar seller ya commission se response na mile ya aapko filing mein madad chahiye, tab lawyer se salah le sakte hain.",
+    "needs_lawyer": false,
+    "facts": [
+      "Purchase was about 92 days ago (2026-08-08). Consumer complaints must be filed within 2 years of the problem arising.",
+      "Amount paid Rs 22,000 -> District Commission; no filing fee (up to Rs 5 lakh)."
+    ],
+    "cited": [
+      "CON-1",
+      "CON-2",
+      "CON-3",
+      "CON-4",
+      "CON-5",
+      "CON-6",
+      "CON-8"
+    ],
+    "confidence": "medium",
+    "confidence_why": [
+      "some sources are model laws or recently changed laws (see caveats)",
+      "some facts are still unknown: has the user already complained to the seller/platform?"
+    ],
+    "safety_notes": []
+  },
+  "notice": null,
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "maine 3 mahine pehle 22000 ka phone liya tha shop se, ab screen band ho gayi, service center bol raha warranty mein nahi aata kyunki water damage hai, par phone kabhi geela nahi hua"
+    },
+    {
+      "role": "assistant",
+      "content": "Aapko ye problem kaafi frustrating lag rahi hogi, samajh sakta hoon. Kya aapne iske liye seller ya platform ko complain kiya hai? (Agar nahi pata, “don’t know” bhi theek hai.)",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "complained_to_seller"
+        ],
+        "case": {
+          "seller_or_platform": "shop",
+          "product_or_service": "phone",
+          "amount_paid": 22000.0,
+          "purchase_date": "2026-08-08",
+          "problem": "Screen stopped working; service center denied warranty claim citing water damage, which the user says never occurred"
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "bill hai mere paas, shop ka naam Mobile World, Indore. haan service center ko complaint kiya tha"
+    },
+    {
+      "role": "assistant",
+      "content": "Aapne Rs 22,000 mein phone kharida tha, 92 din baad screen kharab ho gayi aur service centre ne warranty claim ko water damage ka bahana dekar reject kar diya. Aap consumer hain aur warranty denial ek service deficiency hai, jo aapko consumer commission mein complaint file karne ka adhikar deta hai.\n\n#### Aapki situation\n- Aap consumer protection act, 2019 ke tahat consumer hain (personal use ke liye kharida). `CON-1`\n- Warranty claim ka reject hona service ki deficiency (deficiency in service) mana jata hai. `CON-2`\n- Aapka dispute Rs 22,000 ka hai, isliye District Consumer Commission mein complaint file kar sakte hain. `CON-3``CON-4`\n- Rs 5 lakh tak ki complaint ke liye koi filing fee nahi hai. `CON-5`\n- Complaint ko problem ke hone ki date se 2 saal ke andar file karna zaroori hai; aapke paas abhi kaafi samay hai. `CON-6`\n\n#### Aage kya karein\n1. National Consumer Helpline (1915) ya WhatsApp 8800001915 par call/khoj kar apni shikayat register karein; helpline aapki complaint ko seller tak pahunchati hai aur aksar refund ya repair arrange karti hai. `CON-8`\n2. Agar helpline se solution na mile, to e-Jagriti portal (e-jagriti.gov.in) par District Consumer Commission ke liye online complaint file karein. Apna bill aur service centre ka response attach karein. `CON-3``CON-4``CON-5``CON-6`\n\n#### Aapki details se calculation\n- Purchase was about 92 days ago (2026-08-08). Consumer complaints must be filed within 2 years of the problem arising.\n- Amount paid Rs 22,000 -> District Commission; no filing fee (up to Rs 5 lakh).\n\n#### Ye proof ready rakhein\n- Order ID / invoice / bill\n- Payment proof (bank/UPI/card statement)\n- Screenshots of the product listing and promises made\n- Photos/videos of the defect\n- All emails, chats and complaint/ticket numbers with the seller or platform\n\n#### Vakeel kab chahiye\nAap shayad khud shuru kar sakte hain. Vakeel se milein agar:\nYeh ek routine consumer dispute hai, amount chhota hai aur 2 saal ki limit ke andar hai. Agar seller ya commission se response na mile ya aapko filing mein madad chahiye, tab lawyer se salah le sakte hain.\n- Amount above Rs 50 lakh (State/National Commission)\n- Close to or past the 2-year limit\n- Injury caused by a product\n- Money taken through a scam/fraud (this is a cyber-crime matter: call 1930)\n\n#### Jiske baare mein main pakka nahi hoon\n- Kya aapne seller ya platform ko likhit notice bheja hai ya unke grievance officer se contact kiya hai\n\n#### Verified sources\n- `CON-1` **Section 2(7), Consumer Protection Act, 2019**: Who is a consumer ([source](https://www.indiacode.nic.in/handle/123456789/15256)) _Caveat: Purchases for business/resale may not qualify._\n- `CON-2` **Section 2(11), Consumer Protection Act, 2019**: Deficiency in service ([source](https://www.indiacode.nic.in/handle/123456789/15256))\n- `CON-3` **Section 35, Consumer Protection Act, 2019**: Filing a complaint with the District Commission ([source](https://e-jagriti.gov.in/)) _Caveat: Portal names change; tell the user to check e-jagriti.gov.in._\n- `CON-4` **Consumer Protection (Jurisdiction) Rules, 2021**: Which commission (by amount paid) ([source](https://www.scconline.com/blog/post/2022/01/03/pecuniary-jurisdiction-of-district-state-and-national-commissions-revised-vide-consumer-protection-jurisdiction-of-the-district-commission-the-state-commission-and-the-national-commission-rules-2/)) _Caveat: Based on value of goods/services paid, not compensation claimed._\n- `CON-5` **Rule 7, Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020**: Filing fee ([source](https://e-jagriti.gov.in/)) _Caveat: Fee table as amended in 2022; check the portal for the current fee._\n- `CON-6` **Section 69, Consumer Protection Act, 2019**: Time limit: 2 years ([source](https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/69.php))\n- `CON-8` **National Consumer Helpline (1915)**: Free pre-litigation helpline ([source](https://consumerhelpline.gov.in/public/contact))\n\n**Confidence:** 🟡 Medium (some sources are model laws or recently changed laws (see caveats); some facts are still unknown: has the user already complained to the seller/platform?)\n\nAap aur sawaal pooch sakte hain, **legal notice** ka draft banwa sakte hain, ya doosri party se baat karne ki **practice** kar sakte hain.\n\n_Ye legal information hai, legal advice nahi. Ye sirf upar diye verified sources pe based hai. Court ka maamla ho ya badi rakam ho to vakeel se baat karein (free: NALSA 15100)._",
+      "kind": "advice",
+      "meta": {
+        "advice": {
+          "summary": "Aapne Rs 22,000 mein phone kharida tha, 92 din baad screen kharab ho gayi aur service centre ne warranty claim ko water damage ka bahana dekar reject kar diya. Aap consumer hain aur warranty denial ek service deficiency hai, jo aapko consumer commission mein complaint file karne ka adhikar deta hai.",
+          "points": [
+            {
+              "text": "Aap consumer protection act, 2019 ke tahat consumer hain (personal use ke liye kharida).",
+              "kb_ids": [
+                "CON-1"
+              ]
+            },
+            {
+              "text": "Warranty claim ka reject hona service ki deficiency (deficiency in service) mana jata hai.",
+              "kb_ids": [
+                "CON-2"
+              ]
+            },
+            {
+              "text": "Aapka dispute Rs 22,000 ka hai, isliye District Consumer Commission mein complaint file kar sakte hain.",
+              "kb_ids": [
+                "CON-3",
+                "CON-4"
+              ]
+            },
+            {
+              "text": "Rs 5 lakh tak ki complaint ke liye koi filing fee nahi hai.",
+              "kb_ids": [
+                "CON-5"
+              ]
+            },
+            {
+              "text": "Complaint ko problem ke hone ki date se 2 saal ke andar file karna zaroori hai; aapke paas abhi kaafi samay hai.",
+              "kb_ids": [
+                "CON-6"
+              ]
+            }
+          ],
+          "next_steps": [
+            {
+              "text": "National Consumer Helpline (1915) ya WhatsApp 8800001915 par call/khoj kar apni shikayat register karein; helpline aapki complaint ko seller tak pahunchati hai aur aksar refund ya repair arrange karti hai.",
+              "kb_ids": [
+                "CON-8"
+              ]
+            },
+            {
+              "text": "Agar helpline se solution na mile, to e-Jagriti portal (e-jagriti.gov.in) par District Consumer Commission ke liye online complaint file karein. Apna bill aur service centre ka response attach karein.",
+              "kb_ids": [
+                "CON-3",
+                "CON-4",
+                "CON-5",
+                "CON-6"
+              ]
+            }
+          ],
+          "dont_know": [
+            "Kya aapne seller ya platform ko likhit notice bheja hai ya unke grievance officer se contact kiya hai"
+          ],
+          "lawyer_reason": "Yeh ek routine consumer dispute hai, amount chhota hai aur 2 saal ki limit ke andar hai. Agar seller ya commission se response na mile ya aapko filing mein madad chahiye, tab lawyer se salah le sakte hain.",
+          "needs_lawyer": false,
+          "facts": [
+            "Purchase was about 92 days ago (2026-08-08). Consumer complaints must be filed within 2 years of the problem arising.",
+            "Amount paid Rs 22,000 -> District Commission; no filing fee (up to Rs 5 lakh)."
+          ],
+          "cited": [
+            "CON-1",
+            "CON-2",
+            "CON-3",
+            "CON-4",
+            "CON-5",
+            "CON-6",
+            "CON-8"
+          ],
+          "confidence": "medium",
+          "confidence_why": [
+            "some sources are model laws or recently changed laws (see caveats)",
+            "some facts are still unknown: has the user already complained to the seller/platform?"
+          ],
+          "safety_notes": []
+        },
+        "case": {
+          "seller_or_platform": "Mobile World",
+          "product_or_service": "phone",
+          "amount_paid": 22000.0,
+          "purchase_date": "2026-08-08",
+          "problem": "Screen stopped working; service center denied warranty claim citing water damage, which the user says never occurred",
+          "city": "Indore",
+          "proof_available": [
+            "bill"
+          ],
+          "communication_so_far": "Complained to service center; they denied warranty claim citing water damage."
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "bas itna hi pata hai. ab kya karu?"
+    },
+    {
+      "role": "assistant",
+      "content": "- Sabse pehle National Consumer Helpline (1915) ko call ya WhatsApp (8800001915) karein; ye aapki complaint ko seller tak pahunchane aur refund ya repair ke liye free pre-litigation madad de sakta hai. `CON-8`\n- Agar helpline se solution na mile, to District Consumer Commission mein online complaint file karein (e-Jagriti portal - e-jagriti.gov.in). Rs 22,000 ki rakam ke liye District Commission hi sahi hai, filing fee zero hai, aur aapke paas 2 saal ka time limit hai (abhi 3 mahine ke andar). `CON-3``CON-4``CON-5``CON-6`\n- Complaint mein apna bill, warranty card, aur service centre ka denial ka likhit proof attach karein; ye sab ‘deficiency in service’ ke roop mein maana jayega. `CON-2`\n\n#### Verified sources\n- `CON-2` **Section 2(11), Consumer Protection Act, 2019**: Deficiency in service ([source](https://www.indiacode.nic.in/handle/123456789/15256))\n- `CON-3` **Section 35, Consumer Protection Act, 2019**: Filing a complaint with the District Commission ([source](https://e-jagriti.gov.in/)) _Caveat: Portal names change; tell the user to check e-jagriti.gov.in._\n- `CON-4` **Consumer Protection (Jurisdiction) Rules, 2021**: Which commission (by amount paid) ([source](https://www.scconline.com/blog/post/2022/01/03/pecuniary-jurisdiction-of-district-state-and-national-commissions-revised-vide-consumer-protection-jurisdiction-of-the-district-commission-the-state-commission-and-the-national-commission-rules-2/)) _Caveat: Based on value of goods/services paid, not compensation claimed._\n- `CON-5` **Rule 7, Consumer Protection (Consumer Disputes Redressal Commissions) Rules, 2020**: Filing fee ([source](https://e-jagriti.gov.in/)) _Caveat: Fee table as amended in 2022; check the portal for the current fee._\n- `CON-6` **Section 69, Consumer Protection Act, 2019**: Time limit: 2 years ([source](https://www.advocatekhoj.com/library/bareacts/consumerprotection2019/69.php))\n- `CON-8` **National Consumer Helpline (1915)**: Free pre-litigation helpline ([source](https://consumerhelpline.gov.in/public/contact))\n\n_Ye legal information hai, legal advice nahi. Ye sirf upar diye verified sources pe based hai. Court ka maamla ho ya badi rakam ho to vakeel se baat karein (free: NALSA 15100)._",
+      "kind": "followup",
+      "meta": {
+        "points": [
+          {
+            "text": "Sabse pehle National Consumer Helpline (1915) ko call ya WhatsApp (8800001915) karein; ye aapki complaint ko seller tak pahunchane aur refund ya repair ke liye free pre-litigation madad de sakta hai.",
+            "kb_ids": [
+              "CON-8"
+            ]
+          },
+          {
+            "text": "Agar helpline se solution na mile, to District Consumer Commission mein online complaint file karein (e-Jagriti portal - e-jagriti.gov.in). Rs 22,000 ki rakam ke liye District Commission hi sahi hai, filing fee zero hai, aur aapke paas 2 saal ka time limit hai (abhi 3 mahine ke andar).",
+            "kb_ids": [
+              "CON-3",
+              "CON-4",
+              "CON-5",
+              "CON-6"
+            ]
+          },
+          {
+            "text": "Complaint mein apna bill, warranty card, aur service centre ka denial ka likhit proof attach karein; ye sab ‘deficiency in service’ ke roop mein maana jayega.",
+            "kb_ids": [
+              "CON-2"
+            ]
+          }
+        ],
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 7.43,
+      "prompt_tokens": 473,
+      "completion_tokens": 155
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 2.72,
+      "prompt_tokens": 576,
+      "completion_tokens": 474
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 5.89,
+      "prompt_tokens": 265,
+      "completion_tokens": 132
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 7.41,
+      "prompt_tokens": 661,
+      "completion_tokens": 824
+    },
+    {
+      "name": "advise",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 21.17,
+      "prompt_tokens": 1860,
+      "completion_tokens": 1226
+    },
+    {
+      "name": "followup",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 20.59,
+      "prompt_tokens": 1758,
+      "completion_tokens": 907
+    }
+  ],
+  "model": "groq/openai/gpt-oss-120b"
+}

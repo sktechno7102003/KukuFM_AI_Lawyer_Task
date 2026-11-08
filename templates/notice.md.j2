@@ -1,0 +1,44 @@
+**LEGAL NOTICE**
+
+**Date:** {{ today }}
+**Sent by:** Registered Post A.D. / Email
+
+**From:**
+{{ sender_name }}
+{{ sender_address }}
+
+**To:**
+{{ recipient_name }}
+{{ recipient_address }}
+
+**Subject: {{ subject }}**
+
+{{ salutation }},
+
+I, {{ sender_name }}, hereby give you this notice as follows:
+
+{{ facts }}
+
+**Legal basis**
+
+{% for e in legal_basis -%}
+- {{ e.cite }}: {{ e.notice_line }}
+{% endfor %}
+
+**Demand**
+
+{{ demand }}
+
+Please make the payment within **{{ reply_days }} days** of receiving this notice, by bank transfer/UPI to my account (details below) or by cheque, and confirm in writing.
+
+If you fail to do so, I shall be constrained to pursue the remedies available to me in law, {{ escalation }}, entirely at your risk as to costs and consequences.
+
+I am keeping a copy of this notice for my records.
+
+Yours faithfully,
+
+{{ sender_name }}
+Phone/Email: [PLACEHOLDER: your phone and email]
+Bank/UPI details for payment: [PLACEHOLDER: account or UPI ID]
+
+**Documents in my possession:** {{ proof }}

@@ -1,0 +1,94 @@
+{
+  "issue": "salary",
+  "label": "Salary / wages not paid by employer",
+  "entries": [
+    {
+      "id": "SAL-1",
+      "act": "Code on Wages, 2019",
+      "act_aliases": ["Code on Wages", "Wage Code"],
+      "section": "Section 17",
+      "cite": "Section 17, Code on Wages, 2019",
+      "title": "Deadline to pay salary",
+      "summary": "For monthly-paid employees, salary must be paid before the 7th day of the next month (earlier deadlines apply for daily/weekly wages). If you resign, are removed, dismissed or retrenched, or the establishment closes, your pending wages must be paid within 2 working days.",
+      "use_when": "Any unpaid salary case; full-and-final dues after leaving.",
+      "caveat": "The Code took effect on 21 Nov 2025 but some central/state rules are still being notified, so enforcement details may differ by state. Whether the 2 days count from resignation or last working day is debated.",
+      "source": "https://www.livelaw.in/articles/two-working-days-code-wages-employee-final-settlement-552780",
+      "verified_via": "LiveLaw / People Matters commentary on Section 17 (checked 2026-11-08)",
+      "confidence": "medium",
+      "use_in_notice": true
+    },
+    {
+      "id": "SAL-2",
+      "act": "Code on Wages, 2019",
+      "act_aliases": ["Code on Wages", "Wage Code"],
+      "section": "Section 45",
+      "cite": "Section 45, Code on Wages, 2019",
+      "title": "Wage claim before the labour authority",
+      "summary": "You can file a claim for unpaid wages before an authority appointed by the government (an officer of at least Gazetted rank, usually in the Labour Department). The claim should be filed within 3 years of the wages falling due; the authority tries to decide within 3 months.",
+      "use_when": "Notice to employer failed.",
+      "caveat": "Which office handles it depends on your state and the type of establishment. Ask the local Labour Commissioner's office.",
+      "source": "https://www.advocatekhoj.com/library/bareacts/codeonwages/45.php",
+      "verified_via": "Bare act text + taxclue/rti-wiki commentary (checked 2026-11-08)",
+      "confidence": "medium",
+      "use_in_notice": true
+    },
+    {
+      "id": "SAL-3",
+      "act": "Indian Contract Act, 1872",
+      "act_aliases": ["Indian Contract Act", "Contract Act"],
+      "section": "Section 73",
+      "cite": "Section 73, Indian Contract Act, 1872",
+      "title": "Salary is a contractual promise",
+      "summary": "Your offer/appointment letter is a contract. Not paying agreed salary is a breach, and you can claim the dues through a civil recovery case if the labour route does not apply to you.",
+      "use_when": "Senior/managerial staff, or as a general legal basis.",
+      "caveat": "",
+      "source": "https://www.indiacode.nic.in/handle/123456789/2187",
+      "verified_via": "Well-established provision",
+      "confidence": "high",
+      "use_in_notice": true
+    },
+    {
+      "id": "SAL-4",
+      "act": "",
+      "act_aliases": [],
+      "section": "",
+      "cite": "Practice: written demand + labour office",
+      "title": "Practical order of steps",
+      "summary": "1) Send a written demand by email and registered post. 2) If unpaid, approach the Labour Commissioner/labour office of your area with your proof. 3) Free legal aid (NALSA 15100) can help with the claim or a civil case.",
+      "use_when": "Always.",
+      "caveat": "",
+      "source": "",
+      "verified_via": "General practice",
+      "confidence": "high",
+      "use_in_notice": false
+    },
+    {
+      "id": "SAL-5",
+      "act": "Legal Services Authorities Act, 1987",
+      "act_aliases": ["Legal Services Authorities Act"],
+      "section": "",
+      "cite": "Legal Services Authorities Act, 1987",
+      "title": "Free legal aid",
+      "summary": "Industrial workers and people below the income limit can get a free lawyer from the District Legal Services Authority. Call NALSA helpline 15100.",
+      "use_when": "User cannot afford a lawyer.",
+      "caveat": "",
+      "source": "https://nalsa.gov.in/",
+      "verified_via": "NALSA website (checked 2026-11-08)",
+      "confidence": "high",
+      "use_in_notice": false
+    }
+  ],
+  "proof_checklist": [
+    "Offer/appointment letter or any document showing salary",
+    "Past salary slips and bank statements showing earlier salary credits",
+    "Attendance records, emails or work you did in the unpaid period",
+    "Resignation/termination letter and relieving date (if you left)",
+    "Messages where the employer admits or promises to pay"
+  ],
+  "lawyer_triggers": [
+    "Employer has accused you of theft/misconduct or filed a police complaint",
+    "A salary cheque bounced (separate cheque bounce law, strict 30-day notice deadline)",
+    "Company is shutting down or insolvent",
+    "Many workers unpaid (group/union action)"
+  ]
+}

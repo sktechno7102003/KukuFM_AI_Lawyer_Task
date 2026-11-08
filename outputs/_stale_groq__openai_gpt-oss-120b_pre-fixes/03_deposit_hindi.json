@@ -1,0 +1,313 @@
+{
+  "case": {
+    "city": "Delhi",
+    "deposit_amount": 30000.0,
+    "move_out_date": "2026-09-15",
+    "proof_available": [
+      "rent agreement",
+      "payment receipt"
+    ],
+    "communication_so_far": "Landlord not answering phone; no reason given for withholding deposit.",
+    "written_agreement": true
+  },
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "stage": true,
+    "language": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "hi",
+  "issue": "deposit",
+  "stage": "advised",
+  "unknown": [
+    "landlord_reason"
+  ],
+  "triage": {
+    "issue_type": "deposit",
+    "language": "hi",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "User vacated rented room and landlord not returning security deposit"
+  },
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": {
+    "summary": "आपने मकान खाली किया, लेकिन मकान मालिक ने जमा ₹30,000 वापस नहीं किया। लिखित किराया-समझौता है और 54 दिन बीत चुके हैं, इसलिए आपका दावा मजबूत दिखता है।",
+    "points": [
+      {
+        "text": "भर्ती-क़ानून (Model Tenancy Act) के अनुसार जमा दो महीने के किराए तक सीमित है और खाली करने पर केवल वास्तविक बकाया घटाकर वापस करना चाहिए; यह लागू है अगर आपका राज्य/केंद्र ने इसे अपनाया है।",
+        "kb_ids": [
+          "DEP-1"
+        ]
+      },
+      {
+        "text": "किराया-समझौता एक अनुबंध है; अगर मकान मालिक ने जमा नहीं लौटाया तो आप अनुबंध-भंग के कारण मूल राशि + सामान्य हानि की भरपाई माँग सकते हैं।",
+        "kb_ids": [
+          "DEP-2"
+        ]
+      },
+      {
+        "text": "धन-वसूली का मुकदमा दाखिल करने की समय सीमा आमतौर पर 3 वर्ष है, जो आपके मामले में अभी काफी दूर है।",
+        "kb_ids": [
+          "DEP-3"
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "text": "पहले लिखित कानूनी नोटिस भेजें - रजिस्टर्ड डाक से रसीद रखें और ई-मेल/व्हाट्सएप से भी भेजें।",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      },
+      {
+        "text": "यदि नोटिस का कोई जवाब नहीं मिलता, तो स्थानीय सिविल कोर्ट (या Small Causes Court) में धन-वसूली का केस दायर करें।",
+        "kb_ids": [
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "अगर वकील नहीं ले सकते तो नालसा फ्री लीगल एड (हेल्पलाइन 15100) से मदद लें; वे योग्य वकील और लोकअदालत की जानकारी देंगे।",
+        "kb_ids": [
+          "DEP-6"
+        ]
+      },
+      {
+        "text": "ध्यान रखें कि जमा-वापसी आमतौर पर सिविल मामला है; धोखाधड़ी (क्रिमिनल) के लिए शिकायत करना उचित नहीं है।",
+        "kb_ids": [
+          "GEN-1"
+        ]
+      }
+    ],
+    "dont_know": [
+      "दिल्ली में Model Tenancy Act लागू है या नहीं",
+      "मकान मालिक द्वारा रखे गए संभावित कटौतियों का कारण"
+    ],
+    "lawyer_reason": "यदि नोटिस के बाद भी मकान मालिक जवाब नहीं देता या आप कोर्ट में केस दायर करना चाहते हैं तो वकील की मदद से प्रक्रिया तेज़ और सही होगी।",
+    "needs_lawyer": false,
+    "facts": [
+      "It has been about 54 days since you moved out (2026-09-15).",
+      "Amount to claim: Rs 30,000."
+    ],
+    "cited": [
+      "DEP-1",
+      "DEP-2",
+      "DEP-3",
+      "DEP-4",
+      "DEP-5",
+      "DEP-6",
+      "GEN-1"
+    ],
+    "confidence": "medium",
+    "confidence_why": [
+      "some sources are model laws or recently changed laws (see caveats)",
+      "some facts are still unknown: reason/deductions the landlord gives for not returning"
+    ],
+    "safety_notes": []
+  },
+  "notice": null,
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "मैंने दिल्ली में किराए का कमरा 15 सितंबर 2026 को खाली किया। 30,000 रुपये सिक्योरिटी डिपॉज़िट दिया था। मकान मालिक अब फ़ोन नहीं उठा रहा।"
+    },
+    {
+      "role": "assistant",
+      "content": "समझ रहा हूँ, यह निराशाजनक है।\n1. क्या मकान मालिक ने डिपॉज़िट वापस न करने का कोई कारण बताया? (अगर नहीं पता तो “पता नहीं” लिख दें)  \n2. क्या आपके पास किराए का समझौता, रसीद, स्क्रीनशॉट या संदेश जैसे कोई प्रमाण हैं? (अगर नहीं है तो “कोई नहीं” लिख दें)",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "landlord_reason",
+          "proof_available"
+        ],
+        "case": {
+          "city": "Delhi",
+          "deposit_amount": 30000.0,
+          "move_out_date": "2026-09-15"
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "मेरे पास रेंट एग्रीमेंट और पेमेंट की रसीद है। उसने कोई वजह नहीं बताई।"
+    },
+    {
+      "role": "assistant",
+      "content": "आपने मकान खाली किया, लेकिन मकान मालिक ने जमा ₹30,000 वापस नहीं किया। लिखित किराया-समझौता है और 54 दिन बीत चुके हैं, इसलिए आपका दावा मजबूत दिखता है।\n\n#### आपकी स्थिति\n- भर्ती-क़ानून (Model Tenancy Act) के अनुसार जमा दो महीने के किराए तक सीमित है और खाली करने पर केवल वास्तविक बकाया घटाकर वापस करना चाहिए; यह लागू है अगर आपका राज्य/केंद्र ने इसे अपनाया है। `DEP-1`\n- किराया-समझौता एक अनुबंध है; अगर मकान मालिक ने जमा नहीं लौटाया तो आप अनुबंध-भंग के कारण मूल राशि + सामान्य हानि की भरपाई माँग सकते हैं। `DEP-2`\n- धन-वसूली का मुकदमा दाखिल करने की समय सीमा आमतौर पर 3 वर्ष है, जो आपके मामले में अभी काफी दूर है। `DEP-3`\n\n#### आगे क्या करें\n1. पहले लिखित कानूनी नोटिस भेजें - रजिस्टर्ड डाक से रसीद रखें और ई-मेल/व्हाट्सएप से भी भेजें। `DEP-4`\n2. यदि नोटिस का कोई जवाब नहीं मिलता, तो स्थानीय सिविल कोर्ट (या Small Causes Court) में धन-वसूली का केस दायर करें। `DEP-5`\n3. अगर वकील नहीं ले सकते तो नालसा फ्री लीगल एड (हेल्पलाइन 15100) से मदद लें; वे योग्य वकील और लोकअदालत की जानकारी देंगे। `DEP-6`\n4. ध्यान रखें कि जमा-वापसी आमतौर पर सिविल मामला है; धोखाधड़ी (क्रिमिनल) के लिए शिकायत करना उचित नहीं है। `GEN-1`\n\n#### आपकी जानकारी से गणना\n- It has been about 54 days since you moved out (2026-09-15).\n- Amount to claim: Rs 30,000.\n\n#### ये सबूत तैयार रखें\n- Rent agreement (even unregistered or a WhatsApp/email agreement)\n- Proof deposit was paid (bank transfer / UPI screenshot / receipt)\n- Proof you vacated and handed over keys (message, photos, handover note)\n- Move-out photos/videos of the flat's condition\n- All messages with landlord about the refund\n\n#### वकील कब चाहिए\nआप शायद खुद शुरुआत कर सकते हैं। वकील से मिलें अगर:\nयदि नोटिस के बाद भी मकान मालिक जवाब नहीं देता या आप कोर्ट में केस दायर करना चाहते हैं तो वकील की मदद से प्रक्रिया तेज़ और सही होगी।\n- Landlord has filed a case or police complaint against you\n- Close to 3 years since you vacated\n- Amount is very large or there is a dispute about property ownership\n- Landlord threatens you physically\n\n#### जिसके बारे में मैं पक्का नहीं हूँ\n- दिल्ली में Model Tenancy Act लागू है या नहीं\n- मकान मालिक द्वारा रखे गए संभावित कटौतियों का कारण\n\n#### जाँचे गए स्रोत\n- `DEP-1` **Section 11, Model Tenancy Act, 2021**: Deposit cap and refund on vacating ([source](https://revenue.py.gov.in/downloads/notification/Model%20Tenancy%20Act.pdf)) _Caveat: Model law: it binds only in states/UTs that have enacted it. Many states still follow their own rent control law, and then the rent agreement terms decide refund timing._\n- `DEP-2` **Section 73, Indian Contract Act, 1872**: Compensation when a contract is broken ([source](https://www.indiacode.nic.in/handle/123456789/2187)) _Caveat: Compensation for indirect or remote losses is not allowed._\n- `DEP-3` **Limitation Act, 1963**: Time limit to file a money recovery case ([source](https://www.indiacode.nic.in/handle/123456789/1565)) _Caveat: The exact starting point depends on facts; near the 3-year mark a lawyer must check._\n- `DEP-4` **Practice: legal notice before a case**: Send a written legal notice first\n- `DEP-5` **Practice: civil court / Small Causes Court recovery**: Where to file if the notice fails _Caveat: Which court depends on the city/state and amount; do not name a specific court as certain._\n- `DEP-6` **Legal Services Authorities Act, 1987**: Free legal aid and Lok Adalat ([source](https://nalsa.gov.in/)) _Caveat: Eligibility income limits differ by state._\n- `GEN-1` **Section 318, Bharatiya Nyaya Sanhita, 2023**: Old IPC is replaced; cheating is now a BNS offence ([source](https://www.livelaw.in/supreme-court/offences-of-cheating-criminal-breach-of-trust-cannot-co-exist-on-same-allegations-supreme-court-305118)) _Caveat: Criminal matters are out of scope; always recommend a lawyer._\n\n**भरोसा:** 🟡 Medium (some sources are model laws or recently changed laws (see caveats); some facts are still unknown: reason/deductions the landlord gives for not returning)\n\nआप और सवाल पूछ सकते हैं, **लीगल नोटिस** का ड्राफ़्ट बनवा सकते हैं, या दूसरी पार्टी से बात करने की **प्रैक्टिस** कर सकते हैं।\n\n_यह कानूनी जानकारी है, कानूनी सलाह नहीं। यह सिर्फ़ ऊपर दिए जाँचे गए स्रोतों पर आधारित है। कोर्ट के मामले या बड़ी रकम हो तो वकील से बात करें (मुफ़्त: NALSA 15100)।_",
+      "kind": "advice",
+      "meta": {
+        "advice": {
+          "summary": "आपने मकान खाली किया, लेकिन मकान मालिक ने जमा ₹30,000 वापस नहीं किया। लिखित किराया-समझौता है और 54 दिन बीत चुके हैं, इसलिए आपका दावा मजबूत दिखता है।",
+          "points": [
+            {
+              "text": "भर्ती-क़ानून (Model Tenancy Act) के अनुसार जमा दो महीने के किराए तक सीमित है और खाली करने पर केवल वास्तविक बकाया घटाकर वापस करना चाहिए; यह लागू है अगर आपका राज्य/केंद्र ने इसे अपनाया है।",
+              "kb_ids": [
+                "DEP-1"
+              ]
+            },
+            {
+              "text": "किराया-समझौता एक अनुबंध है; अगर मकान मालिक ने जमा नहीं लौटाया तो आप अनुबंध-भंग के कारण मूल राशि + सामान्य हानि की भरपाई माँग सकते हैं।",
+              "kb_ids": [
+                "DEP-2"
+              ]
+            },
+            {
+              "text": "धन-वसूली का मुकदमा दाखिल करने की समय सीमा आमतौर पर 3 वर्ष है, जो आपके मामले में अभी काफी दूर है।",
+              "kb_ids": [
+                "DEP-3"
+              ]
+            }
+          ],
+          "next_steps": [
+            {
+              "text": "पहले लिखित कानूनी नोटिस भेजें - रजिस्टर्ड डाक से रसीद रखें और ई-मेल/व्हाट्सएप से भी भेजें।",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            },
+            {
+              "text": "यदि नोटिस का कोई जवाब नहीं मिलता, तो स्थानीय सिविल कोर्ट (या Small Causes Court) में धन-वसूली का केस दायर करें।",
+              "kb_ids": [
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "अगर वकील नहीं ले सकते तो नालसा फ्री लीगल एड (हेल्पलाइन 15100) से मदद लें; वे योग्य वकील और लोकअदालत की जानकारी देंगे।",
+              "kb_ids": [
+                "DEP-6"
+              ]
+            },
+            {
+              "text": "ध्यान रखें कि जमा-वापसी आमतौर पर सिविल मामला है; धोखाधड़ी (क्रिमिनल) के लिए शिकायत करना उचित नहीं है।",
+              "kb_ids": [
+                "GEN-1"
+              ]
+            }
+          ],
+          "dont_know": [
+            "दिल्ली में Model Tenancy Act लागू है या नहीं",
+            "मकान मालिक द्वारा रखे गए संभावित कटौतियों का कारण"
+          ],
+          "lawyer_reason": "यदि नोटिस के बाद भी मकान मालिक जवाब नहीं देता या आप कोर्ट में केस दायर करना चाहते हैं तो वकील की मदद से प्रक्रिया तेज़ और सही होगी।",
+          "needs_lawyer": false,
+          "facts": [
+            "It has been about 54 days since you moved out (2026-09-15).",
+            "Amount to claim: Rs 30,000."
+          ],
+          "cited": [
+            "DEP-1",
+            "DEP-2",
+            "DEP-3",
+            "DEP-4",
+            "DEP-5",
+            "DEP-6",
+            "GEN-1"
+          ],
+          "confidence": "medium",
+          "confidence_why": [
+            "some sources are model laws or recently changed laws (see caveats)",
+            "some facts are still unknown: reason/deductions the landlord gives for not returning"
+          ],
+          "safety_notes": []
+        },
+        "case": {
+          "city": "Delhi",
+          "deposit_amount": 30000.0,
+          "move_out_date": "2026-09-15",
+          "proof_available": [
+            "rent agreement",
+            "payment receipt"
+          ],
+          "communication_so_far": "Landlord not answering phone; no reason given for withholding deposit.",
+          "written_agreement": true
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "बस इतना ही पता है। अब मैं क्या करूँ?"
+    },
+    {
+      "role": "assistant",
+      "content": "- रजिस्टर्ड पोस्ट (रसीद के साथ) और ई-मेल/व्हाट्सएप से लिखित कानूनी नोटिस भेजें, जिसमें 15 दिनों के भीतर ₹30,000 जमा वापस करने की मांग करें। `DEP-4`\n- यदि नोटिस का कोई जवाब नहीं मिलता, तो स्थानीय सिविल कोर्ट या छोटे कारणों के कोर्ट में धन-वसूली का मुकदमा दायर करें। `DEP-5`\n- ध्यान रखें कि जमा की वसूली के लिए 3 साल की सीमित अवधि है, जो 15 सितंबर 2026 से शुरू होती है; इस समय-सीमा के भीतर कार्रवाई करें। `DEP-3`\n- यदि वकील का खर्च वहन नहीं कर सकते, तो जिला कानूनी सेवा प्राधिकरण (DLSA) से मुफ्त कानूनी सहायता और लोकअदालत में निपटारा करने की संभावना पूछें। `DEP-6`\n\n**वकील कब चाहिए:** वकील नोटिस तैयार करने, कोर्ट में दायर करने और प्रक्रिया के दौरान आपके अधिकारों की रक्षा करने में मदद करेगा।\n\n#### जाँचे गए स्रोत\n- `DEP-3` **Limitation Act, 1963**: Time limit to file a money recovery case ([source](https://www.indiacode.nic.in/handle/123456789/1565)) _Caveat: The exact starting point depends on facts; near the 3-year mark a lawyer must check._\n- `DEP-4` **Practice: legal notice before a case**: Send a written legal notice first\n- `DEP-5` **Practice: civil court / Small Causes Court recovery**: Where to file if the notice fails _Caveat: Which court depends on the city/state and amount; do not name a specific court as certain._\n- `DEP-6` **Legal Services Authorities Act, 1987**: Free legal aid and Lok Adalat ([source](https://nalsa.gov.in/)) _Caveat: Eligibility income limits differ by state._\n\n_यह कानूनी जानकारी है, कानूनी सलाह नहीं। यह सिर्फ़ ऊपर दिए जाँचे गए स्रोतों पर आधारित है। कोर्ट के मामले या बड़ी रकम हो तो वकील से बात करें (मुफ़्त: NALSA 15100)।_",
+      "kind": "followup",
+      "meta": {
+        "points": [
+          {
+            "text": "रजिस्टर्ड पोस्ट (रसीद के साथ) और ई-मेल/व्हाट्सएप से लिखित कानूनी नोटिस भेजें, जिसमें 15 दिनों के भीतर ₹30,000 जमा वापस करने की मांग करें।",
+            "kb_ids": [
+              "DEP-4"
+            ]
+          },
+          {
+            "text": "यदि नोटिस का कोई जवाब नहीं मिलता, तो स्थानीय सिविल कोर्ट या छोटे कारणों के कोर्ट में धन-वसूली का मुकदमा दायर करें।",
+            "kb_ids": [
+              "DEP-5"
+            ]
+          },
+          {
+            "text": "ध्यान रखें कि जमा की वसूली के लिए 3 साल की सीमित अवधि है, जो 15 सितंबर 2026 से शुरू होती है; इस समय-सीमा के भीतर कार्रवाई करें।",
+            "kb_ids": [
+              "DEP-3"
+            ]
+          },
+          {
+            "text": "यदि वकील का खर्च वहन नहीं कर सकते, तो जिला कानूनी सेवा प्राधिकरण (DLSA) से मुफ्त कानूनी सहायता और लोकअदालत में निपटारा करने की संभावना पूछें।",
+            "kb_ids": [
+              "DEP-6"
+            ]
+          }
+        ],
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 8.97,
+      "prompt_tokens": 471,
+      "completion_tokens": 150
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 5.47,
+      "prompt_tokens": 577,
+      "completion_tokens": 370
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 5.1,
+      "prompt_tokens": 286,
+      "completion_tokens": 207
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 6.57,
+      "prompt_tokens": 629,
+      "completion_tokens": 363
+    },
+    {
+      "name": "advise",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 17.71,
+      "prompt_tokens": 1747,
+      "completion_tokens": 1046
+    },
+    {
+      "name": "followup",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 19.8,
+      "prompt_tokens": 1726,
+      "completion_tokens": 607
+    }
+  ],
+  "model": "groq/openai/gpt-oss-120b"
+}

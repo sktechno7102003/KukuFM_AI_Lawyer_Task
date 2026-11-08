@@ -1,0 +1,159 @@
+{
+  "case": {},
+  "result": {
+    "escalation": true,
+    "stage": true,
+    "lawyer": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "hinglish",
+  "issue": null,
+  "stage": "notice",
+  "unknown": [],
+  "triage": {
+    "issue_type": "notice_explain",
+    "language": "hinglish",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "User received a civil court summons and seeks explanation"
+  },
+  "lawyer_reasons": [
+    "You mentioned police / court involvement: Summons",
+    "This notice is from a court: get a lawyer before responding."
+  ],
+  "police_court_flag": true,
+  "advice": null,
+  "notice": {
+    "sender": "Civil Judge (Junior Division), Jaipur",
+    "sender_type": "court",
+    "what_they_claim": "Shri Mohan Lal has filed a suit to recover Rs 2,40,000 from you",
+    "what_they_want": "You must appear in person or through a pleader on 20 November 2026 at 10:30 AM to answer the claim",
+    "deadline_text": "20 November 2026 at 10:30 AM",
+    "amount_demanded": 240000,
+    "laws_cited": [],
+    "points": [
+      {
+        "text": "Yeh ek court ka summons hai – aapko court mein bulaya gaya hai kyunki koi aapke khilaf civil case (suit) file kar raha hai.",
+        "kb_ids": []
+      },
+      {
+        "text": "Case ka maksad hai Mohan Lal ko Rs 2,40,000 wapas milna, jo wo aapse maang raha hai.",
+        "kb_ids": []
+      },
+      {
+        "text": "Aapko ya to khud court mein present hona padega ya koi vakil (pleader) aapki taraf se appear karega.",
+        "kb_ids": []
+      },
+      {
+        "text": "Agar aap is date‑time tak court nahi aate, to case aapke bina hi sunwayi jaayegi aur judge aapke khilaf faisla de sakta hai.",
+        "kb_ids": []
+      }
+    ],
+    "what_you_can_do": [
+      {
+        "text": "20 Nov 2026 ko 10:30 AM par court mein personally ya apne vakil ke through appear ho kar apni defence de sakte hain.",
+        "kb_ids": []
+      },
+      {
+        "text": "Ek qualified vakil se turant milkar case ki details samjhein aur apni legal strategy banayein.",
+        "kb_ids": []
+      },
+      {
+        "text": "Agar aapke paas koi likhit jawab (written statement) ya saboot hain, to unhe taiyar karke court mein pesh karen.",
+        "kb_ids": []
+      },
+      {
+        "text": "Agar aapko date ya samay se related koi problem hai, to court ki registry se sampark karke adjournment (date badalne) ki request kar sakte hain, lekin iske liye aapko valid reason dena hoga.",
+        "kb_ids": []
+      },
+      {
+        "text": "Agar aap financially ya legal aid ki zarurat mehsoos karte hain, to NALSA (15100) se free legal aid ke liye contact kar sakte hain.",
+        "kb_ids": []
+      }
+    ],
+    "dont_know": []
+  },
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "Mujhe ye mila hai, samajh nahi aa raha: \"IN THE COURT OF THE CIVIL JUDGE (JUNIOR DIVISION), JAIPUR. Summons to defendant in a suit. Whereas Shri Mohan Lal has instituted a suit against you for recovery of Rs 2,40,000, you are hereby summoned to appear in this Court in person or by a pleader on 20 November 2026 at 10:30 AM to answer the claim. Take notice that in default of your appearance, the suit will be heard and determined in your absence.\"\n"
+    },
+    {
+      "role": "assistant",
+      "content": "⚖️ **Is maamle ke kuch hisse ke liye aapko real vakeel chahiye** (police / criminal / court). Free legal aid: NALSA **15100** ya District Legal Services Authority. Court ya police ka koi bhi kaagaz ignore mat karein.\n\n**Kisne bheja:** Civil Judge (Junior Division), Jaipur\n**Woh kya keh rahe hain:** Shri Mohan Lal has filed a suit to recover Rs 2,40,000 from you\n**Woh aapse kya chahte hain:** You must appear in person or through a pleader on 20 November 2026 at 10:30 AM to answer the claim\n**Deadline:** 20 November 2026 at 10:30 AM\n\n#### Iska matlab\n- Yeh ek court ka summons hai - aapko court mein bulaya gaya hai kyunki koi aapke khilaf civil case (suit) file kar raha hai.\n- Case ka maksad hai Mohan Lal ko Rs 2,40,000 wapas milna, jo wo aapse maang raha hai.\n- Aapko ya to khud court mein present hona padega ya koi vakil (pleader) aapki taraf se appear karega.\n- Agar aap is date-time tak court nahi aate, to case aapke bina hi sunwayi jaayegi aur judge aapke khilaf faisla de sakta hai.\n\n#### Aapke options\n1. 20 Nov 2026 ko 10:30 AM par court mein personally ya apne vakil ke through appear ho kar apni defence de sakte hain.\n2. Ek qualified vakil se turant milkar case ki details samjhein aur apni legal strategy banayein.\n3. Agar aapke paas koi likhit jawab (written statement) ya saboot hain, to unhe taiyar karke court mein pesh karen.\n4. Agar aapko date ya samay se related koi problem hai, to court ki registry se sampark karke adjournment (date badalne) ki request kar sakte hain, lekin iske liye aapko valid reason dena hoga.\n5. Agar aap financially ya legal aid ki zarurat mehsoos karte hain, to NALSA (15100) se free legal aid ke liye contact kar sakte hain.\n\n#### Vakeel kab chahiye\n- You mentioned police / court involvement: Summons\n- This notice is from a court: get a lawyer before responding.\n\n_Ye legal information hai, legal advice nahi. Ye sirf upar diye verified sources pe based hai. Court ka maamla ho ya badi rakam ho to vakeel se baat karein (free: NALSA 15100)._",
+      "kind": "notice",
+      "meta": {
+        "parsed": {
+          "sender": "Civil Judge (Junior Division), Jaipur",
+          "sender_type": "court",
+          "what_they_claim": "Shri Mohan Lal has filed a suit to recover Rs 2,40,000 from you",
+          "what_they_want": "You must appear in person or through a pleader on 20 November 2026 at 10:30 AM to answer the claim",
+          "deadline_text": "20 November 2026 at 10:30 AM",
+          "amount_demanded": 240000,
+          "laws_cited": [],
+          "points": [
+            {
+              "text": "Yeh ek court ka summons hai – aapko court mein bulaya gaya hai kyunki koi aapke khilaf civil case (suit) file kar raha hai.",
+              "kb_ids": []
+            },
+            {
+              "text": "Case ka maksad hai Mohan Lal ko Rs 2,40,000 wapas milna, jo wo aapse maang raha hai.",
+              "kb_ids": []
+            },
+            {
+              "text": "Aapko ya to khud court mein present hona padega ya koi vakil (pleader) aapki taraf se appear karega.",
+              "kb_ids": []
+            },
+            {
+              "text": "Agar aap is date‑time tak court nahi aate, to case aapke bina hi sunwayi jaayegi aur judge aapke khilaf faisla de sakta hai.",
+              "kb_ids": []
+            }
+          ],
+          "what_you_can_do": [
+            {
+              "text": "20 Nov 2026 ko 10:30 AM par court mein personally ya apne vakil ke through appear ho kar apni defence de sakte hain.",
+              "kb_ids": []
+            },
+            {
+              "text": "Ek qualified vakil se turant milkar case ki details samjhein aur apni legal strategy banayein.",
+              "kb_ids": []
+            },
+            {
+              "text": "Agar aapke paas koi likhit jawab (written statement) ya saboot hain, to unhe taiyar karke court mein pesh karen.",
+              "kb_ids": []
+            },
+            {
+              "text": "Agar aapko date ya samay se related koi problem hai, to court ki registry se sampark karke adjournment (date badalne) ki request kar sakte hain, lekin iske liye aapko valid reason dena hoga.",
+              "kb_ids": []
+            },
+            {
+              "text": "Agar aap financially ya legal aid ki zarurat mehsoos karte hain, to NALSA (15100) se free legal aid ke liye contact kar sakte hain.",
+              "kb_ids": []
+            }
+          ],
+          "dont_know": []
+        },
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 10.88,
+      "prompt_tokens": 545,
+      "completion_tokens": 126
+    },
+    {
+      "name": "explain_notice",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 21.39,
+      "prompt_tokens": 2789,
+      "completion_tokens": 849
+    }
+  ],
+  "model": "groq/openai/gpt-oss-120b"
+}

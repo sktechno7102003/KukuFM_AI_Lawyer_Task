@@ -1,0 +1,282 @@
+{
+  "case": {
+    "move_out_date": "2026-08-31",
+    "deposit_amount": 40000.0,
+    "amount_withheld": 40000.0,
+    "landlord_reason": "kitchen damaged",
+    "proof_available": [
+      "rent agreement",
+      "bank transfer receipt"
+    ],
+    "written_agreement": true
+  },
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "stage": true,
+    "language": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "hinglish",
+  "issue": "deposit",
+  "stage": "advised",
+  "unknown": [],
+  "triage": {
+    "issue_type": "deposit",
+    "language": "hinglish",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "Landlord not returning deposit after moving out"
+  },
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": {
+    "summary": "Aapne 31 Aug 2026 ko ghar chhoda aur landlord ne Rs 40,000 ka security deposit kitchen damage ka bahana bana kar rakh liya hai. Aapke paas rent agreement aur bank receipt hai, isliye aapka case strong lagta hai.",
+    "points": [
+      {
+        "text": "Model Tenancy Act ke tahat security deposit sirf 2 mahine ka rent tak ho sakta hai aur landlord ko vacant possession ke baad sirf genuine dues (jaise actual damage) ke liye hi katoti karni hoti hai; baki poora deposit wapas dena hota hai.",
+        "kb_ids": [
+          "DEP-1"
+        ]
+      },
+      {
+        "text": "Rent agreement ek contract hai; agar landlord ne deposit wapas nahi kiya to aap contract breach ke liye paisa aur seedhi nuksan ka compensation maang sakte hain.",
+        "kb_ids": [
+          "DEP-2"
+        ]
+      },
+      {
+        "text": "Deposit claim ke liye aapko 3 saal ka limitation period milta hai (vacate ki date se shuru), isliye abhi case file karne ki koi time limit nahi hai.",
+        "kb_ids": [
+          "DEP-3"
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "text": "Ek likhit legal notice bhejein (registered post aur email/WhatsApp) jisme rent agreement aur bank receipt ka zikr ho, aur landlord se deposit wapas karne ki demand karein.",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      },
+      {
+        "text": "Agar notice ka koi jawab nahi milta, to local civil court ya Small Causes Court mein money recovery case file karein; court fees aur process ke liye lawyer ya free legal aid se salah lein.",
+        "kb_ids": [
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "Agar aap lawyer afford nahi kar sakte, to District Legal Services Authority se free legal aid le sakte hain (helpline 15100) ya Lok Adalat mein settlement ki koshish karein.",
+        "kb_ids": [
+          "DEP-6"
+        ]
+      }
+    ],
+    "dont_know": [
+      "Aapke state ne Model Tenancy Act adopt kiya hai ya nahi, iski jankari aapko check karni hogi.",
+      "Kitchen damage ko 'genuine dues' maana jayega ya nahi, iske liye damage ki actual cost aur proof ki zarurat hogi."
+    ],
+    "lawyer_reason": "Deposit ka amount moderate hai aur abhi time limit close nahi hai; aap pehle notice aur free legal aid se kaam chala sakte hain. Agar landlord dispute kare ya court case file karna pade to lawyer se salah lena behtar rahega.",
+    "needs_lawyer": false,
+    "facts": [
+      "It has been about 69 days since you moved out (2026-08-31).",
+      "Amount to claim: Rs 40,000."
+    ],
+    "cited": [
+      "DEP-1",
+      "DEP-2",
+      "DEP-3",
+      "DEP-4",
+      "DEP-5",
+      "DEP-6"
+    ],
+    "confidence": "medium",
+    "confidence_why": [
+      "some sources are model laws or recently changed laws (see caveats)"
+    ],
+    "safety_notes": []
+  },
+  "notice": null,
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "bhai mera landlord deposit nahi de raha. 2 mahine ho gaye flat chhode. bahut tension hai, kya karu"
+    },
+    {
+      "role": "assistant",
+      "content": "Samajh sakta hoon, aapka tension.\n1. Aapne kitna security deposit (INR mein) diya tha?\n2. Landlord ne deposit wapas na karne ka kya reason ya koi deduction bataya? (Agar nahi pata, “don’t know” likh dein.)",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "deposit_amount",
+          "landlord_reason"
+        ],
+        "case": {
+          "move_out_date": "2026-09"
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "deposit 40 hazaar tha, august ke end mein chhoda tha. woh bol raha hai kitchen kharab kar diya, jo jhooth hai"
+    },
+    {
+      "role": "assistant",
+      "content": "Samajh sakta hoon, ye bahut stressful ho sakta hai. Kya aapke paas koi likhit agreement, rent receipt ya landlord ke saath chat/screenshot hai jo deposit ya condition of flat dikhata ho? Agar nahi pata, bas “don’t know” keh dena.",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "proof_available"
+        ],
+        "case": {
+          "move_out_date": "2026-08-31",
+          "deposit_amount": 40000.0,
+          "amount_withheld": 40000.0,
+          "landlord_reason": "kitchen damaged"
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "agreement hai, aur paise bank transfer kiye the. aur kuch nahi pata"
+    },
+    {
+      "role": "assistant",
+      "content": "Aapne 31 Aug 2026 ko ghar chhoda aur landlord ne Rs 40,000 ka security deposit kitchen damage ka bahana bana kar rakh liya hai. Aapke paas rent agreement aur bank receipt hai, isliye aapka case strong lagta hai.\n\n#### Aapki situation\n- Model Tenancy Act ke tahat security deposit sirf 2 mahine ka rent tak ho sakta hai aur landlord ko vacant possession ke baad sirf genuine dues (jaise actual damage) ke liye hi katoti karni hoti hai; baki poora deposit wapas dena hota hai. `DEP-1`\n- Rent agreement ek contract hai; agar landlord ne deposit wapas nahi kiya to aap contract breach ke liye paisa aur seedhi nuksan ka compensation maang sakte hain. `DEP-2`\n- Deposit claim ke liye aapko 3 saal ka limitation period milta hai (vacate ki date se shuru), isliye abhi case file karne ki koi time limit nahi hai. `DEP-3`\n\n#### Aage kya karein\n1. Ek likhit legal notice bhejein (registered post aur email/WhatsApp) jisme rent agreement aur bank receipt ka zikr ho, aur landlord se deposit wapas karne ki demand karein. `DEP-4`\n2. Agar notice ka koi jawab nahi milta, to local civil court ya Small Causes Court mein money recovery case file karein; court fees aur process ke liye lawyer ya free legal aid se salah lein. `DEP-5`\n3. Agar aap lawyer afford nahi kar sakte, to District Legal Services Authority se free legal aid le sakte hain (helpline 15100) ya Lok Adalat mein settlement ki koshish karein. `DEP-6`\n\n#### Aapki details se calculation\n- It has been about 69 days since you moved out (2026-08-31).\n- Amount to claim: Rs 40,000.\n\n#### Ye proof ready rakhein\n- Rent agreement (even unregistered or a WhatsApp/email agreement)\n- Proof deposit was paid (bank transfer / UPI screenshot / receipt)\n- Proof you vacated and handed over keys (message, photos, handover note)\n- Move-out photos/videos of the flat's condition\n- All messages with landlord about the refund\n\n#### Vakeel kab chahiye\nAap shayad khud shuru kar sakte hain. Vakeel se milein agar:\nDeposit ka amount moderate hai aur abhi time limit close nahi hai; aap pehle notice aur free legal aid se kaam chala sakte hain. Agar landlord dispute kare ya court case file karna pade to lawyer se salah lena behtar rahega.\n- Landlord has filed a case or police complaint against you\n- Close to 3 years since you vacated\n- Amount is very large or there is a dispute about property ownership\n- Landlord threatens you physically\n\n#### Jiske baare mein main pakka nahi hoon\n- Aapke state ne Model Tenancy Act adopt kiya hai ya nahi, iski jankari aapko check karni hogi.\n- Kitchen damage ko 'genuine dues' maana jayega ya nahi, iske liye damage ki actual cost aur proof ki zarurat hogi.\n\n#### Verified sources\n- `DEP-1` **Section 11, Model Tenancy Act, 2021**: Deposit cap and refund on vacating ([source](https://revenue.py.gov.in/downloads/notification/Model%20Tenancy%20Act.pdf)) _Caveat: Model law: it binds only in states/UTs that have enacted it. Many states still follow their own rent control law, and then the rent agreement terms decide refund timing._\n- `DEP-2` **Section 73, Indian Contract Act, 1872**: Compensation when a contract is broken ([source](https://www.indiacode.nic.in/handle/123456789/2187)) _Caveat: Compensation for indirect or remote losses is not allowed._\n- `DEP-3` **Limitation Act, 1963**: Time limit to file a money recovery case ([source](https://www.indiacode.nic.in/handle/123456789/1565)) _Caveat: The exact starting point depends on facts; near the 3-year mark a lawyer must check._\n- `DEP-4` **Practice: legal notice before a case**: Send a written legal notice first\n- `DEP-5` **Practice: civil court / Small Causes Court recovery**: Where to file if the notice fails _Caveat: Which court depends on the city/state and amount; do not name a specific court as certain._\n- `DEP-6` **Legal Services Authorities Act, 1987**: Free legal aid and Lok Adalat ([source](https://nalsa.gov.in/)) _Caveat: Eligibility income limits differ by state._\n\n**Confidence:** 🟡 Medium (some sources are model laws or recently changed laws (see caveats))\n\nAap aur sawaal pooch sakte hain, **legal notice** ka draft banwa sakte hain, ya doosri party se baat karne ki **practice** kar sakte hain.\n\n_Ye legal information hai, legal advice nahi. Ye sirf upar diye verified sources pe based hai. Court ka maamla ho ya badi rakam ho to vakeel se baat karein (free: NALSA 15100)._",
+      "kind": "advice",
+      "meta": {
+        "advice": {
+          "summary": "Aapne 31 Aug 2026 ko ghar chhoda aur landlord ne Rs 40,000 ka security deposit kitchen damage ka bahana bana kar rakh liya hai. Aapke paas rent agreement aur bank receipt hai, isliye aapka case strong lagta hai.",
+          "points": [
+            {
+              "text": "Model Tenancy Act ke tahat security deposit sirf 2 mahine ka rent tak ho sakta hai aur landlord ko vacant possession ke baad sirf genuine dues (jaise actual damage) ke liye hi katoti karni hoti hai; baki poora deposit wapas dena hota hai.",
+              "kb_ids": [
+                "DEP-1"
+              ]
+            },
+            {
+              "text": "Rent agreement ek contract hai; agar landlord ne deposit wapas nahi kiya to aap contract breach ke liye paisa aur seedhi nuksan ka compensation maang sakte hain.",
+              "kb_ids": [
+                "DEP-2"
+              ]
+            },
+            {
+              "text": "Deposit claim ke liye aapko 3 saal ka limitation period milta hai (vacate ki date se shuru), isliye abhi case file karne ki koi time limit nahi hai.",
+              "kb_ids": [
+                "DEP-3"
+              ]
+            }
+          ],
+          "next_steps": [
+            {
+              "text": "Ek likhit legal notice bhejein (registered post aur email/WhatsApp) jisme rent agreement aur bank receipt ka zikr ho, aur landlord se deposit wapas karne ki demand karein.",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            },
+            {
+              "text": "Agar notice ka koi jawab nahi milta, to local civil court ya Small Causes Court mein money recovery case file karein; court fees aur process ke liye lawyer ya free legal aid se salah lein.",
+              "kb_ids": [
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "Agar aap lawyer afford nahi kar sakte, to District Legal Services Authority se free legal aid le sakte hain (helpline 15100) ya Lok Adalat mein settlement ki koshish karein.",
+              "kb_ids": [
+                "DEP-6"
+              ]
+            }
+          ],
+          "dont_know": [
+            "Aapke state ne Model Tenancy Act adopt kiya hai ya nahi, iski jankari aapko check karni hogi.",
+            "Kitchen damage ko 'genuine dues' maana jayega ya nahi, iske liye damage ki actual cost aur proof ki zarurat hogi."
+          ],
+          "lawyer_reason": "Deposit ka amount moderate hai aur abhi time limit close nahi hai; aap pehle notice aur free legal aid se kaam chala sakte hain. Agar landlord dispute kare ya court case file karna pade to lawyer se salah lena behtar rahega.",
+          "needs_lawyer": false,
+          "facts": [
+            "It has been about 69 days since you moved out (2026-08-31).",
+            "Amount to claim: Rs 40,000."
+          ],
+          "cited": [
+            "DEP-1",
+            "DEP-2",
+            "DEP-3",
+            "DEP-4",
+            "DEP-5",
+            "DEP-6"
+          ],
+          "confidence": "medium",
+          "confidence_why": [
+            "some sources are model laws or recently changed laws (see caveats)"
+          ],
+          "safety_notes": []
+        },
+        "case": {
+          "move_out_date": "2026-08-31",
+          "deposit_amount": 40000.0,
+          "amount_withheld": 40000.0,
+          "landlord_reason": "kitchen damaged",
+          "proof_available": [
+            "rent agreement",
+            "bank transfer receipt"
+          ],
+          "written_agreement": true
+        }
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 4.7,
+      "prompt_tokens": 454,
+      "completion_tokens": 100
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 4.05,
+      "prompt_tokens": 560,
+      "completion_tokens": 307
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 3.05,
+      "prompt_tokens": 258,
+      "completion_tokens": 192
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 6.51,
+      "prompt_tokens": 602,
+      "completion_tokens": 450
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 4.84,
+      "prompt_tokens": 279,
+      "completion_tokens": 139
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 6.66,
+      "prompt_tokens": 652,
+      "completion_tokens": 443
+    },
+    {
+      "name": "advise",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 19.1,
+      "prompt_tokens": 1733,
+      "completion_tokens": 1098
+    }
+  ],
+  "model": "groq/openai/gpt-oss-120b"
+}

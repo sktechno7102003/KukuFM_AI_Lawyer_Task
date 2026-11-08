@@ -1,0 +1,320 @@
+{
+  "case": {
+    "city": "Pune",
+    "communication_so_far": "Landlord keeps saying he will pay next week; now says he'll cut 20,000 for painting",
+    "landlord_name": "Mr. Suresh Patil",
+    "monthly_rent": 18000.0,
+    "deposit_amount": 54000.0,
+    "amount_withheld": 54000.0,
+    "move_out_date": "2026-07-31",
+    "landlord_reason": "cut 20,000 for painting",
+    "proof_available": [
+      "rent agreement",
+      "UPI screenshot of the deposit",
+      "WhatsApp chats",
+      "video of the flat"
+    ],
+    "written_agreement": true
+  },
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "stage": true,
+    "language": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "en",
+  "issue": "deposit",
+  "stage": "advised",
+  "unknown": [],
+  "triage": {
+    "issue_type": "deposit",
+    "language": "en",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "Tenant's landlord delaying return of security deposit and threatening deduction."
+  },
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": {
+    "summary": "You paid a Rs 54,000 security deposit, but the landlord now wants to keep Rs 20,000 for painting. Under contract law the landlord must return the full deposit unless he can prove actual damage, and the Model Tenancy Act (where adopted) caps deposits at two months' rent.",
+    "points": [
+      {
+        "text": "A rent agreement is a contract; if the landlord withholds the deposit without proper proof of damage, you can claim the full amount plus compensation for the breach.",
+        "kb_ids": [
+          "DEP-2"
+        ]
+      },
+      {
+        "text": "The Model Tenancy Act limits a security deposit to two months' rent (Rs 36,000 for your rent) where the state has adopted it, so any excess amount must be returned.",
+        "kb_ids": [
+          "DEP-1"
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "text": "Send a written legal notice to the landlord (by Registered Post with acknowledgement and also by email/WhatsApp) demanding the full refund and stating you will claim compensation if not paid.",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      },
+      {
+        "text": "If the landlord does not pay after the notice, file a money-recovery suit in the local civil court or Small Causes Court (check the appropriate court for your city and claim amount).",
+        "kb_ids": [
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "If you cannot afford a lawyer, call the NALSA free legal-aid helpline at 15100 for advice and possible free representation.",
+        "kb_ids": [
+          "DEP-6"
+        ]
+      }
+    ],
+    "dont_know": [
+      "Whether Maharashtra (Pune) has adopted the Model Tenancy Act",
+      "The exact court where a money-recovery case should be filed in Pune",
+      "Your eligibility for free legal aid under the income criteria"
+    ],
+    "lawyer_reason": "The dispute can start with a legal notice and, if needed, a small civil suit. A lawyer is advisable only if the notice fails or you need help filing the case, but it is not mandatory at this stage.",
+    "needs_lawyer": false,
+    "facts": [
+      "It has been about 100 days since you moved out (2026-07-31).",
+      "Your deposit was 3.0 months' rent (the Model Tenancy Act caps it at 2, where adopted).",
+      "Amount to claim: Rs 54,000."
+    ],
+    "cited": [
+      "DEP-1",
+      "DEP-2",
+      "DEP-4",
+      "DEP-5",
+      "DEP-6"
+    ],
+    "confidence": "medium",
+    "confidence_why": [
+      "some sources are model laws or recently changed laws (see caveats)"
+    ],
+    "safety_notes": []
+  },
+  "notice": {
+    "markdown": "**LEGAL NOTICE**\n\n**Date:** 08 November 2026\n**Sent by:** Registered Post A.D. / Email\n\n**From:**\n[PLACEHOLDER: Full name of the person asking]\n[PLACEHOLDER: User's postal address]\n\n**To:**\nMr. Suresh Patil\n[PLACEHOLDER: Landlord's postal address]\n\n**Subject: Demand for refund of security deposit of Rs 54,000**\n\nDear Sir/Madam,\n\nI, [PLACEHOLDER: Full name of the person asking], hereby give you this notice as follows:\n\n1. I vacated the flat in Pune on 31 July 2026.\n\n2. My monthly rent was Rs 18,000 and I paid a security deposit of Rs 54,000, which equals three months’ rent, as recorded in the written rent agreement.\n\n3. I possess proof of the deposit and tenancy, including the rent agreement, a UPI screenshot of the deposit, WhatsApp chats with the landlord, and a video of the flat.\n\n4. Since moving out, Mr. Suresh Patil has repeatedly told me he will return the deposit next week; now he says he will retain Rs 20,000 for painting.\n\n5. As a result, the full deposit amount of Rs 54,000 remains withheld.\n\n6. It has been approximately 100 days since I vacated the premises, and I have not received any portion of the deposit.\n\n**Legal basis**\n\n- Section 73, Indian Contract Act, 1872: You agreed to refund the security deposit when I vacated. Withholding it is a breach of our agreement, entitling me to recover it with compensation.\n\n\n**Demand**\n\nI hereby call upon you to refund the security deposit amount of Rs 54,000 withheld by you.\n\nPlease make the payment within **15 days** of receiving this notice, by bank transfer/UPI to my account (details below) or by cheque, and confirm in writing.\n\nIf you fail to do so, I shall be constrained to pursue the remedies available to me in law, including filing a civil suit for recovery of the amount with interest and costs, entirely at your risk as to costs and consequences.\n\nI am keeping a copy of this notice for my records.\n\nYours faithfully,\n\n[PLACEHOLDER: Full name of the person asking]\nPhone/Email: [PLACEHOLDER: your phone and email]\nBank/UPI details for payment: [PLACEHOLDER: account or UPI ID]\n\n**Documents in my possession:** rent agreement, UPI screenshot of the deposit, WhatsApp chats, video of the flat",
+    "missing": [
+      "user_name",
+      "user_address",
+      "landlord_address"
+    ],
+    "placeholders": [
+      "Full name of the person asking",
+      "Landlord's postal address",
+      "User's postal address",
+      "account or UPI ID",
+      "your phone and email"
+    ],
+    "removed": []
+  },
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "I rented a 1BHK in Pune for Rs 18,000 a month and paid a deposit of Rs 54,000. I vacated on 31 July 2026 and gave back the keys. It's been 3 months and the landlord, Mr. Suresh Patil, keeps saying he will pay next week. Now he says he'll cut 20,000 for painting."
+    },
+    {
+      "role": "assistant",
+      "content": "I’m sorry you’re dealing with this. Do you have any documents or messages—like the rental agreement, deposit receipt, or chats with Mr. Patil—that show the deposit terms or his promises? It’s fine to say “don’t know” if you don’t have anything.",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "proof_available"
+        ],
+        "case": {
+          "city": "Pune",
+          "communication_so_far": "Landlord keeps saying he will pay next week; now says he'll cut 20,000 for painting",
+          "landlord_name": "Mr. Suresh Patil",
+          "monthly_rent": 18000.0,
+          "deposit_amount": 54000.0,
+          "amount_withheld": 54000.0,
+          "move_out_date": "2026-07-31",
+          "landlord_reason": "cut 20,000 for painting"
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "Yes I have the rent agreement, the UPI screenshot of the deposit and WhatsApp chats with him. I also took a video of the flat on the last day."
+    },
+    {
+      "role": "assistant",
+      "content": "You paid a Rs 54,000 security deposit, but the landlord now wants to keep Rs 20,000 for painting. Under contract law the landlord must return the full deposit unless he can prove actual damage, and the Model Tenancy Act (where adopted) caps deposits at two months' rent.\n\n#### Where you stand\n- A rent agreement is a contract; if the landlord withholds the deposit without proper proof of damage, you can claim the full amount plus compensation for the breach. `DEP-2`\n- The Model Tenancy Act limits a security deposit to two months' rent (Rs 36,000 for your rent) where the state has adopted it, so any excess amount must be returned. `DEP-1`\n\n#### What you can do next\n1. Send a written legal notice to the landlord (by Registered Post with acknowledgement and also by email/WhatsApp) demanding the full refund and stating you will claim compensation if not paid. `DEP-4`\n2. If the landlord does not pay after the notice, file a money-recovery suit in the local civil court or Small Causes Court (check the appropriate court for your city and claim amount). `DEP-5`\n3. If you cannot afford a lawyer, call the NALSA free legal-aid helpline at 15100 for advice and possible free representation. `DEP-6`\n\n#### Calculated from your details\n- It has been about 100 days since you moved out (2026-07-31).\n- Your deposit was 3.0 months' rent (the Model Tenancy Act caps it at 2, where adopted).\n- Amount to claim: Rs 54,000.\n\n#### Proof to keep ready\n- Rent agreement (even unregistered or a WhatsApp/email agreement)\n- Proof deposit was paid (bank transfer / UPI screenshot / receipt)\n- Proof you vacated and handed over keys (message, photos, handover note)\n- Move-out photos/videos of the flat's condition\n- All messages with landlord about the refund\n\n#### When to see a lawyer\nYou can likely start on your own. See a lawyer if:\nThe dispute can start with a legal notice and, if needed, a small civil suit. A lawyer is advisable only if the notice fails or you need help filing the case, but it is not mandatory at this stage.\n- Landlord has filed a case or police complaint against you\n- Close to 3 years since you vacated\n- Amount is very large or there is a dispute about property ownership\n- Landlord threatens you physically\n\n#### What I'm not sure about\n- Whether Maharashtra (Pune) has adopted the Model Tenancy Act\n- The exact court where a money-recovery case should be filed in Pune\n- Your eligibility for free legal aid under the income criteria\n\n#### Verified sources used\n- `DEP-1` **Section 11, Model Tenancy Act, 2021**: Deposit cap and refund on vacating ([source](https://revenue.py.gov.in/downloads/notification/Model%20Tenancy%20Act.pdf)) _Caveat: Model law: it binds only in states/UTs that have enacted it. Many states still follow their own rent control law, and then the rent agreement terms decide refund timing._\n- `DEP-2` **Section 73, Indian Contract Act, 1872**: Compensation when a contract is broken ([source](https://www.indiacode.nic.in/handle/123456789/2187)) _Caveat: Compensation for indirect or remote losses is not allowed._\n- `DEP-4` **Practice: legal notice before a case**: Send a written legal notice first\n- `DEP-5` **Practice: civil court / Small Causes Court recovery**: Where to file if the notice fails _Caveat: Which court depends on the city/state and amount; do not name a specific court as certain._\n- `DEP-6` **Legal Services Authorities Act, 1987**: Free legal aid and Lok Adalat ([source](https://nalsa.gov.in/)) _Caveat: Eligibility income limits differ by state._\n\n**Confidence:** 🟡 Medium (some sources are model laws or recently changed laws (see caveats))\n\nYou can ask me follow-up questions, generate a **legal notice** draft, or **practise** talking to the other side.\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "advice",
+      "meta": {
+        "advice": {
+          "summary": "You paid a Rs 54,000 security deposit, but the landlord now wants to keep Rs 20,000 for painting. Under contract law the landlord must return the full deposit unless he can prove actual damage, and the Model Tenancy Act (where adopted) caps deposits at two months' rent.",
+          "points": [
+            {
+              "text": "A rent agreement is a contract; if the landlord withholds the deposit without proper proof of damage, you can claim the full amount plus compensation for the breach.",
+              "kb_ids": [
+                "DEP-2"
+              ]
+            },
+            {
+              "text": "The Model Tenancy Act limits a security deposit to two months' rent (Rs 36,000 for your rent) where the state has adopted it, so any excess amount must be returned.",
+              "kb_ids": [
+                "DEP-1"
+              ]
+            }
+          ],
+          "next_steps": [
+            {
+              "text": "Send a written legal notice to the landlord (by Registered Post with acknowledgement and also by email/WhatsApp) demanding the full refund and stating you will claim compensation if not paid.",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            },
+            {
+              "text": "If the landlord does not pay after the notice, file a money-recovery suit in the local civil court or Small Causes Court (check the appropriate court for your city and claim amount).",
+              "kb_ids": [
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "If you cannot afford a lawyer, call the NALSA free legal-aid helpline at 15100 for advice and possible free representation.",
+              "kb_ids": [
+                "DEP-6"
+              ]
+            }
+          ],
+          "dont_know": [
+            "Whether Maharashtra (Pune) has adopted the Model Tenancy Act",
+            "The exact court where a money-recovery case should be filed in Pune",
+            "Your eligibility for free legal aid under the income criteria"
+          ],
+          "lawyer_reason": "The dispute can start with a legal notice and, if needed, a small civil suit. A lawyer is advisable only if the notice fails or you need help filing the case, but it is not mandatory at this stage.",
+          "needs_lawyer": false,
+          "facts": [
+            "It has been about 100 days since you moved out (2026-07-31).",
+            "Your deposit was 3.0 months' rent (the Model Tenancy Act caps it at 2, where adopted).",
+            "Amount to claim: Rs 54,000."
+          ],
+          "cited": [
+            "DEP-1",
+            "DEP-2",
+            "DEP-4",
+            "DEP-5",
+            "DEP-6"
+          ],
+          "confidence": "medium",
+          "confidence_why": [
+            "some sources are model laws or recently changed laws (see caveats)"
+          ],
+          "safety_notes": []
+        },
+        "case": {
+          "city": "Pune",
+          "communication_so_far": "Landlord keeps saying he will pay next week; now says he'll cut 20,000 for painting",
+          "landlord_name": "Mr. Suresh Patil",
+          "monthly_rent": 18000.0,
+          "deposit_amount": 54000.0,
+          "amount_withheld": 54000.0,
+          "move_out_date": "2026-07-31",
+          "landlord_reason": "cut 20,000 for painting",
+          "proof_available": [
+            "rent agreement",
+            "UPI screenshot of the deposit",
+            "WhatsApp chats",
+            "video of the flat"
+          ],
+          "written_agreement": true
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "That's all I know. What should I do now?"
+    },
+    {
+      "role": "assistant",
+      "content": "- Send a formal legal notice to Mr. Patil (registered post with acknowledgement and a copy by email/WhatsApp) demanding the full Rs 54,000 deposit back, stating that under the rent agreement (a contract) he can retain only actual damage costs and that the Model Tenancy Act caps deposits at two months’ rent where applicable. `DEP-4``DEP-2``DEP-1`\n- If he does not comply within about 15 days, file a money-recovery suit in the local civil court or Small Causes Court. The claim must be filed within 3 years of the due date (the date you vacated), so act promptly. `DEP-5``DEP-3`\n- If you cannot afford a lawyer, approach the District Legal Services Authority for free legal aid and possible settlement through Lok Adalat (call NALSA helpline 15100). `DEP-6`\n\n**When to see a lawyer:** A lawyer can draft the notice, ensure it meets legal requirements, and represent you if the case proceeds to court.\n\n#### Verified sources used\n- `DEP-1` **Section 11, Model Tenancy Act, 2021**: Deposit cap and refund on vacating ([source](https://revenue.py.gov.in/downloads/notification/Model%20Tenancy%20Act.pdf)) _Caveat: Model law: it binds only in states/UTs that have enacted it. Many states still follow their own rent control law, and then the rent agreement terms decide refund timing._\n- `DEP-2` **Section 73, Indian Contract Act, 1872**: Compensation when a contract is broken ([source](https://www.indiacode.nic.in/handle/123456789/2187)) _Caveat: Compensation for indirect or remote losses is not allowed._\n- `DEP-3` **Limitation Act, 1963**: Time limit to file a money recovery case ([source](https://www.indiacode.nic.in/handle/123456789/1565)) _Caveat: The exact starting point depends on facts; near the 3-year mark a lawyer must check._\n- `DEP-4` **Practice: legal notice before a case**: Send a written legal notice first\n- `DEP-5` **Practice: civil court / Small Causes Court recovery**: Where to file if the notice fails _Caveat: Which court depends on the city/state and amount; do not name a specific court as certain._\n- `DEP-6` **Legal Services Authorities Act, 1987**: Free legal aid and Lok Adalat ([source](https://nalsa.gov.in/)) _Caveat: Eligibility income limits differ by state._\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "followup",
+      "meta": {
+        "points": [
+          {
+            "text": "Send a formal legal notice to Mr. Patil (registered post with acknowledgement and a copy by email/WhatsApp) demanding the full Rs 54,000 deposit back, stating that under the rent agreement (a contract) he can retain only actual damage costs and that the Model Tenancy Act caps deposits at two months’ rent where applicable.",
+            "kb_ids": [
+              "DEP-4",
+              "DEP-2",
+              "DEP-1"
+            ]
+          },
+          {
+            "text": "If he does not comply within about 15 days, file a money-recovery suit in the local civil court or Small Causes Court. The claim must be filed within 3 years of the due date (the date you vacated), so act promptly.",
+            "kb_ids": [
+              "DEP-5",
+              "DEP-3"
+            ]
+          },
+          {
+            "text": "If you cannot afford a lawyer, approach the District Legal Services Authority for free legal aid and possible settlement through Lok Adalat (call NALSA helpline 15100).",
+            "kb_ids": [
+              "DEP-6"
+            ]
+          }
+        ],
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 0.86,
+      "prompt_tokens": 506,
+      "completion_tokens": 103
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 1.61,
+      "prompt_tokens": 612,
+      "completion_tokens": 528
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 0.81,
+      "prompt_tokens": 292,
+      "completion_tokens": 151
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 1.34,
+      "prompt_tokens": 752,
+      "completion_tokens": 397
+    },
+    {
+      "name": "advise",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 2.61,
+      "prompt_tokens": 1830,
+      "completion_tokens": 1036
+    },
+    {
+      "name": "followup",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 14.15,
+      "prompt_tokens": 1757,
+      "completion_tokens": 682
+    },
+    {
+      "name": "doc_facts",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 6.82,
+      "prompt_tokens": 374,
+      "completion_tokens": 592
+    }
+  ],
+  "model": "groq/openai/gpt-oss-120b"
+}

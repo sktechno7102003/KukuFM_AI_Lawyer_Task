@@ -1,0 +1,51 @@
+{
+  "case": {},
+  "result": {
+    "escalation": true,
+    "stage": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "en",
+  "issue": null,
+  "stage": "out_of_scope",
+  "unknown": [],
+  "triage": {
+    "issue_type": "out_of_scope",
+    "language": "en",
+    "red_flags": [
+      "family"
+    ],
+    "out_of_scope_reason": "family law matter",
+    "summary": "User seeks divorce and child custody advice"
+  },
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": null,
+  "notice": null,
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "I want to divorce my husband and get custody of my 5 year old son. How do I do it?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry, I can't reliably help with this kind of problem, and I don't want to guess about the law.\n\n**What I cover:** a landlord not returning your deposit, a refund/defective product or service, unpaid salary, and explaining a notice you received.\n\n**For your problem:** please speak to a lawyer. If cost is a worry, call NALSA **15100** for a free government lawyer, or visit your District Legal Services Authority (DLSA).",
+      "kind": "out_of_scope",
+      "meta": {
+        "reason": "family law matter"
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 8.98,
+      "prompt_tokens": 448,
+      "completion_tokens": 99
+    }
+  ],
+  "model": "groq/openai/gpt-oss-120b"
+}

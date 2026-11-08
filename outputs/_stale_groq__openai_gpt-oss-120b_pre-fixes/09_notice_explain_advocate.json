@@ -1,0 +1,192 @@
+{
+  "case": {},
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "stage": true,
+    "lawyer": true,
+    "language": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "language": "en",
+  "issue": null,
+  "stage": "notice",
+  "unknown": [],
+  "triage": {
+    "issue_type": "notice_explain",
+    "language": "en",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "User asks for explanation of a notice"
+  },
+  "lawyer_reasons": [
+    "It was sent by a lawyer. Reply in writing before the deadline; a lawyer's help is advisable."
+  ],
+  "police_court_flag": false,
+  "advice": null,
+  "notice": {
+    "sender": "Adv. P. K. Verma",
+    "sender_type": "advocate",
+    "what_they_claim": "You caused damage to the flooring and fittings of the flat when you vacated on 10 August 2026, estimated at Rs 45,000. The landlord used your security deposit of Rs 36,000 against that damage and now says you owe the remaining Rs 9,000.",
+    "what_you_want": "Pay the balance of Rs 9,000 within the time specified.",
+    "deadline_text": "within 15 days of receipt of this notice",
+    "amount_demanded": 9000,
+    "laws_cited": [
+      "Section 73 of the Indian Contract Act, 1872"
+    ],
+    "points": [
+      {
+        "text": "The notice says you left the premises on 10 Aug 2026 and the landlord assessed damage costing Rs 45,000.",
+        "kb_ids": []
+      },
+      {
+        "text": "Your security deposit of Rs 36,000 has been deducted from that amount.",
+        "kb_ids": []
+      },
+      {
+        "text": "The landlord claims a balance of Rs 9,000 is still payable by you.",
+        "kb_ids": []
+      },
+      {
+        "text": "You are asked to pay that Rs 9,000 within 15 days of receiving this notice.",
+        "kb_ids": []
+      },
+      {
+        "text": "If you do not pay, the landlord intends to start a civil recovery suit under Section 73 of the Indian Contract Act, 1872, and you may have to bear court costs.",
+        "kb_ids": [
+          "DEP-2",
+          "DEP-5"
+        ]
+      }
+    ],
+    "what_you_can_do": [
+      {
+        "text": "Pay the Rs 9,000 within the 15‑day period and keep a receipt or bank‑transfer proof as evidence of payment.",
+        "kb_ids": []
+      },
+      {
+        "text": "If you dispute the damage amount, send a written response (by registered post or email) stating your objections, attach any photographs, videos or repair bills, and ask the landlord to provide a detailed itemised estimate.",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      },
+      {
+        "text": "Seek free legal advice or a lawyer through the District Legal Services Authority (call 15100).",
+        "kb_ids": [
+          "DEP-6"
+        ]
+      },
+      {
+        "text": "If the landlord files a civil suit, you can defend the claim in the appropriate civil court; consider filing a counter‑claim if the deposit was wrongly adjusted.",
+        "kb_ids": [
+          "DEP-5"
+        ]
+      }
+    ],
+    "dont_know": []
+  },
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "I got this notice, what does it mean?"
+    },
+    {
+      "role": "assistant",
+      "content": "Please paste the full text of the notice (or type it out), and I'll explain it in simple words.",
+      "kind": "question",
+      "meta": {}
+    },
+    {
+      "role": "user",
+      "content": "LEGAL NOTICE. Under instructions from my client Mr. Rakesh Sharma, owner of Flat 302, Green Park Society, Lucknow, I hereby serve you notice that you, as tenant, caused damage to the flooring and fittings of the premises at the time of vacating on 10 August 2026, estimated at Rs 45,000. My client has adjusted the security deposit of Rs 36,000 against the said damage, and you are hereby called upon to pay the balance Rs 9,000 within 15 days of receipt of this notice, failing which my client shall initiate appropriate civil proceedings for recovery under Section 73 of the Indian Contract Act, 1872, at your risk as to costs. Sd/- Adv. P. K. Verma\n"
+    },
+    {
+      "role": "assistant",
+      "content": "**Who sent it:** Adv. P. K. Verma\n**What they say:** You caused damage to the flooring and fittings of the flat when you vacated on 10 August 2026, estimated at Rs 45,000. The landlord used your security deposit of Rs 36,000 against that damage and now says you owe the remaining Rs 9,000.\n**What they want from you:** not mentioned\n**Deadline:** within 15 days of receipt of this notice\n\n#### What it means\n- The notice says you left the premises on 10 Aug 2026 and the landlord assessed damage costing Rs 45,000.\n- Your security deposit of Rs 36,000 has been deducted from that amount.\n- The landlord claims a balance of Rs 9,000 is still payable by you.\n- You are asked to pay that Rs 9,000 within 15 days of receiving this notice.\n- If you do not pay, the landlord intends to start a civil recovery suit under Section 73 of the Indian Contract Act, 1872, and you may have to bear court costs.\n\n#### Your options\n1. Pay the Rs 9,000 within the 15-day period and keep a receipt or bank-transfer proof as evidence of payment.\n2. If you dispute the damage amount, send a written response (by registered post or email) stating your objections, attach any photographs, videos or repair bills, and ask the landlord to provide a detailed itemised estimate.\n3. Seek free legal advice or a lawyer through the District Legal Services Authority (call 15100).\n4. If the landlord files a civil suit, you can defend the claim in the appropriate civil court; consider filing a counter-claim if the deposit was wrongly adjusted.\n\n#### Laws cited in the notice (as written; I have not verified these)\n- Section 73 of the Indian Contract Act, 1872\n\n#### When to see a lawyer\n- It was sent by a lawyer. Reply in writing before the deadline; a lawyer's help is advisable.\n\n_This is legal information, not legal advice. It's based only on the verified sources listed. For anything in court, or if a lot of money is at stake, talk to a lawyer (free: NALSA 15100)._",
+      "kind": "notice",
+      "meta": {
+        "parsed": {
+          "sender": "Adv. P. K. Verma",
+          "sender_type": "advocate",
+          "what_they_claim": "You caused damage to the flooring and fittings of the flat when you vacated on 10 August 2026, estimated at Rs 45,000. The landlord used your security deposit of Rs 36,000 against that damage and now says you owe the remaining Rs 9,000.",
+          "what_you_want": "Pay the balance of Rs 9,000 within the time specified.",
+          "deadline_text": "within 15 days of receipt of this notice",
+          "amount_demanded": 9000,
+          "laws_cited": [
+            "Section 73 of the Indian Contract Act, 1872"
+          ],
+          "points": [
+            {
+              "text": "The notice says you left the premises on 10 Aug 2026 and the landlord assessed damage costing Rs 45,000.",
+              "kb_ids": []
+            },
+            {
+              "text": "Your security deposit of Rs 36,000 has been deducted from that amount.",
+              "kb_ids": []
+            },
+            {
+              "text": "The landlord claims a balance of Rs 9,000 is still payable by you.",
+              "kb_ids": []
+            },
+            {
+              "text": "You are asked to pay that Rs 9,000 within 15 days of receiving this notice.",
+              "kb_ids": []
+            },
+            {
+              "text": "If you do not pay, the landlord intends to start a civil recovery suit under Section 73 of the Indian Contract Act, 1872, and you may have to bear court costs.",
+              "kb_ids": [
+                "DEP-2",
+                "DEP-5"
+              ]
+            }
+          ],
+          "what_you_can_do": [
+            {
+              "text": "Pay the Rs 9,000 within the 15‑day period and keep a receipt or bank‑transfer proof as evidence of payment.",
+              "kb_ids": []
+            },
+            {
+              "text": "If you dispute the damage amount, send a written response (by registered post or email) stating your objections, attach any photographs, videos or repair bills, and ask the landlord to provide a detailed itemised estimate.",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            },
+            {
+              "text": "Seek free legal advice or a lawyer through the District Legal Services Authority (call 15100).",
+              "kb_ids": [
+                "DEP-6"
+              ]
+            },
+            {
+              "text": "If the landlord files a civil suit, you can defend the claim in the appropriate civil court; consider filing a counter‑claim if the deposit was wrongly adjusted.",
+              "kb_ids": [
+                "DEP-5"
+              ]
+            }
+          ],
+          "dont_know": []
+        },
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 6.9,
+      "prompt_tokens": 435,
+      "completion_tokens": 104
+    },
+    {
+      "name": "explain_notice",
+      "model": "openai/gpt-oss-120b",
+      "seconds": 24.43,
+      "prompt_tokens": 2819,
+      "completion_tokens": 1191
+    }
+  ],
+  "model": "groq/openai/gpt-oss-120b"
+}

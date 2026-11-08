@@ -1,0 +1,288 @@
+{
+  "test_case": {
+    "id": "03_deposit_hindi",
+    "category": "happy path (Hindi)",
+    "turns": [
+      "मैंने दिल्ली में किराए का कमरा 15 सितंबर 2026 को खाली किया। 30,000 रुपये सिक्योरिटी डिपॉज़िट दिया था। मकान मालिक अब फ़ोन नहीं उठा रहा।",
+      "मेरे पास रेंट एग्रीमेंट और पेमेंट की रसीद है। उसने कोई वजह नहीं बताई।",
+      "बस इतना ही पता है। अब मैं क्या करूँ?"
+    ],
+    "expect": {
+      "issue": "deposit",
+      "escalation": "none",
+      "language": "hi",
+      "stage": "advised"
+    }
+  },
+  "result": {
+    "issue": true,
+    "escalation": true,
+    "stage": true,
+    "language": true,
+    "no_case_law": true
+  },
+  "error": null,
+  "seconds": 68.1,
+  "language": "hi",
+  "issue": "deposit",
+  "stage": "advised",
+  "case": {
+    "city": "Delhi",
+    "deposit_amount": 30000.0,
+    "move_out_date": "2026-09-15",
+    "proof_available": [
+      "rent agreement",
+      "payment receipt"
+    ],
+    "written_agreement": true,
+    "landlord_reason": "none"
+  },
+  "unknown": [],
+  "triage": {
+    "issue_type": "deposit",
+    "language": "hi",
+    "red_flags": [],
+    "out_of_scope_reason": "",
+    "summary": "User wants help with landlord not returning security deposit after vacating a rented room."
+  },
+  "lawyer_reasons": [],
+  "police_court_flag": false,
+  "advice": {
+    "summary": "आपने 30,000 रुपये की जमा राशि दी है और 15 सितंबर 2026 को घर खाली किया। मकान मालिक ने अभी तक राशि वापस नहीं की है, जिससे अनुबंध का उल्लंघन हुआ है और आपको राशि व नुकसान की मांग का अधिकार है।",
+    "points": [
+      {
+        "text": "मकान मालिक को जमा राशि वापस करनी है, केवल वैध बकाया या नुकसान के बाद।",
+        "kb_ids": [
+          "DEP-1",
+          "DEP-2"
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "text": "लिखित नोटिस भेजें (रजिस्टर्ड पोस्ट/ईमेल/WhatsApp)।",
+        "kb_ids": [
+          "DEP-4"
+        ]
+      },
+      {
+        "text": "यदि 30 दिनों के भीतर न मिले तो 3 साल के भीतर मुकदमा दायर करें।",
+        "kb_ids": [
+          "DEP-3",
+          "DEP-5"
+        ]
+      },
+      {
+        "text": "यदि वकील नहीं पा सकते तो NALSA हेल्पलाइन 15100 पर संपर्क करें।",
+        "kb_ids": [
+          "DEP-6"
+        ]
+      }
+    ],
+    "dont_know": [
+      "क्या दिल्ली ने मॉडल टेनेंसी एक्ट अपनाया है?",
+      "क्या मकान मालिक वैध बकाया के रूप में कोई राशि काट सकता है?"
+    ],
+    "lawyer_reason": "मामला सामान्य है; नोटिस के बाद भी न मिले तो वकील से सलाह लें।",
+    "needs_lawyer": false,
+    "facts": [
+      "It has been about 54 days since you moved out (2026-09-15).",
+      "Amount to claim: Rs 30,000."
+    ],
+    "cited": [
+      "DEP-1",
+      "DEP-2",
+      "DEP-3",
+      "DEP-4",
+      "DEP-5",
+      "DEP-6"
+    ],
+    "confidence": "medium",
+    "confidence_why": [
+      "some sources are model laws or recently changed laws (see caveats)"
+    ],
+    "safety_notes": []
+  },
+  "notice": null,
+  "validation_log": [],
+  "history": [
+    {
+      "role": "user",
+      "content": "मैंने दिल्ली में किराए का कमरा 15 सितंबर 2026 को खाली किया। 30,000 रुपये सिक्योरिटी डिपॉज़िट दिया था। मकान मालिक अब फ़ोन नहीं उठा रहा।"
+    },
+    {
+      "role": "assistant",
+      "content": "मुझे समझ में आता है कि यह स्थिति परेशान कर सकती है।\n1. मकान मालिक ने सिक्योरिटी डिपॉज़िट वापस न करने का क्या कारण बताया है?\n2. क्या आपके पास कोई दस्तावेज़ या साक्ष्य (जैसे अनुबंध, रसीद, स्क्रीनशॉट, संदेश) हैं?\n\nअगर आपको पता नहीं है तो 'don't know' कहें।",
+      "kind": "question",
+      "meta": {
+        "asking": [
+          "landlord_reason",
+          "proof_available"
+        ],
+        "case": {
+          "city": "Delhi",
+          "deposit_amount": 30000.0,
+          "move_out_date": "2026-09-15"
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "मेरे पास रेंट एग्रीमेंट और पेमेंट की रसीद है। उसने कोई वजह नहीं बताई।"
+    },
+    {
+      "role": "assistant",
+      "content": "आपने 30,000 रुपये की जमा राशि दी है और 15 सितंबर 2026 को घर खाली किया। मकान मालिक ने अभी तक राशि वापस नहीं की है, जिससे अनुबंध का उल्लंघन हुआ है और आपको राशि व नुकसान की मांग का अधिकार है।\n\n#### आपकी स्थिति\n- मकान मालिक को जमा राशि वापस करनी है, केवल वैध बकाया या नुकसान के बाद। `DEP-1``DEP-2`\n\n#### आगे क्या करें\n1. लिखित नोटिस भेजें (रजिस्टर्ड पोस्ट/ईमेल/WhatsApp)। `DEP-4`\n2. यदि 30 दिनों के भीतर न मिले तो 3 साल के भीतर मुकदमा दायर करें। `DEP-3``DEP-5`\n3. यदि वकील नहीं पा सकते तो NALSA हेल्पलाइन 15100 पर संपर्क करें। `DEP-6`\n\n#### आपकी जानकारी से गणना\n- It has been about 54 days since you moved out (2026-09-15).\n- Amount to claim: Rs 30,000.\n\n#### ये सबूत तैयार रखें\n- Rent agreement (even unregistered or a WhatsApp/email agreement)\n- Proof deposit was paid (bank transfer / UPI screenshot / receipt)\n- Proof you vacated and handed over keys (message, photos, handover note)\n- Move-out photos/videos of the flat's condition\n- All messages with landlord about the refund\n\n#### वकील कब चाहिए\nआप शायद खुद शुरुआत कर सकते हैं। वकील से मिलें अगर:\nमामला सामान्य है; नोटिस के बाद भी न मिले तो वकील से सलाह लें।\n- Landlord has filed a case or police complaint against you\n- Close to 3 years since you vacated\n- Amount is very large or there is a dispute about property ownership\n- Landlord threatens you physically\n\n#### जिसके बारे में मैं पक्का नहीं हूँ\n- क्या दिल्ली ने मॉडल टेनेंसी एक्ट अपनाया है?\n- क्या मकान मालिक वैध बकाया के रूप में कोई राशि काट सकता है?\n\n#### जाँचे गए स्रोत\n- `DEP-1` **Section 11, Model Tenancy Act, 2021**: Deposit cap and refund on vacating ([source](https://revenue.py.gov.in/downloads/notification/Model%20Tenancy%20Act.pdf)) _Caveat: Model law: it binds only in states/UTs that have enacted it. Many states still follow their own rent control law, and then the rent agreement terms decide refund timing._\n- `DEP-2` **Section 73, Indian Contract Act, 1872**: Compensation when a contract is broken ([source](https://www.indiacode.nic.in/handle/123456789/2187)) _Caveat: Compensation for indirect or remote losses is not allowed._\n- `DEP-3` **Limitation Act, 1963**: Time limit to file a money recovery case ([source](https://www.indiacode.nic.in/handle/123456789/1565)) _Caveat: The exact starting point depends on facts; near the 3-year mark a lawyer must check._\n- `DEP-4` **Practice: legal notice before a case**: Send a written legal notice first\n- `DEP-5` **Practice: civil court / Small Causes Court recovery**: Where to file if the notice fails _Caveat: Which court depends on the city/state and amount; do not name a specific court as certain._\n- `DEP-6` **Legal Services Authorities Act, 1987**: Free legal aid and Lok Adalat ([source](https://nalsa.gov.in/)) _Caveat: Eligibility income limits differ by state._\n\n**भरोसा:** 🟡 Medium (some sources are model laws or recently changed laws (see caveats))\n\nआप और सवाल पूछ सकते हैं, **लीगल नोटिस** का ड्राफ़्ट बनवा सकते हैं, या दूसरी पार्टी से बात करने की **प्रैक्टिस** कर सकते हैं।\n\n_यह कानूनी जानकारी है, कानूनी सलाह नहीं। यह सिर्फ़ ऊपर दिए जाँचे गए स्रोतों पर आधारित है। कोर्ट के मामले या बड़ी रकम हो तो वकील से बात करें (मुफ़्त: NALSA 15100)।_",
+      "kind": "advice",
+      "meta": {
+        "advice": {
+          "summary": "आपने 30,000 रुपये की जमा राशि दी है और 15 सितंबर 2026 को घर खाली किया। मकान मालिक ने अभी तक राशि वापस नहीं की है, जिससे अनुबंध का उल्लंघन हुआ है और आपको राशि व नुकसान की मांग का अधिकार है।",
+          "points": [
+            {
+              "text": "मकान मालिक को जमा राशि वापस करनी है, केवल वैध बकाया या नुकसान के बाद।",
+              "kb_ids": [
+                "DEP-1",
+                "DEP-2"
+              ]
+            }
+          ],
+          "next_steps": [
+            {
+              "text": "लिखित नोटिस भेजें (रजिस्टर्ड पोस्ट/ईमेल/WhatsApp)।",
+              "kb_ids": [
+                "DEP-4"
+              ]
+            },
+            {
+              "text": "यदि 30 दिनों के भीतर न मिले तो 3 साल के भीतर मुकदमा दायर करें।",
+              "kb_ids": [
+                "DEP-3",
+                "DEP-5"
+              ]
+            },
+            {
+              "text": "यदि वकील नहीं पा सकते तो NALSA हेल्पलाइन 15100 पर संपर्क करें।",
+              "kb_ids": [
+                "DEP-6"
+              ]
+            }
+          ],
+          "dont_know": [
+            "क्या दिल्ली ने मॉडल टेनेंसी एक्ट अपनाया है?",
+            "क्या मकान मालिक वैध बकाया के रूप में कोई राशि काट सकता है?"
+          ],
+          "lawyer_reason": "मामला सामान्य है; नोटिस के बाद भी न मिले तो वकील से सलाह लें।",
+          "needs_lawyer": false,
+          "facts": [
+            "It has been about 54 days since you moved out (2026-09-15).",
+            "Amount to claim: Rs 30,000."
+          ],
+          "cited": [
+            "DEP-1",
+            "DEP-2",
+            "DEP-3",
+            "DEP-4",
+            "DEP-5",
+            "DEP-6"
+          ],
+          "confidence": "medium",
+          "confidence_why": [
+            "some sources are model laws or recently changed laws (see caveats)"
+          ],
+          "safety_notes": []
+        },
+        "case": {
+          "city": "Delhi",
+          "deposit_amount": 30000.0,
+          "move_out_date": "2026-09-15",
+          "proof_available": [
+            "rent agreement",
+            "payment receipt"
+          ],
+          "written_agreement": true,
+          "landlord_reason": "none"
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": "बस इतना ही पता है। अब मैं क्या करूँ?"
+    },
+    {
+      "role": "assistant",
+      "content": "- लिखित नोटिस भेजें (रजिस्टर्ड पोस्ट/ईमेल/WhatsApp) ताकि मकान मालिक को औपचारिक रूप से मांग मिले। `DEP-4`\n- यदि नोटिस के 30 दिनों के भीतर जमा राशि वापस नहीं मिलती, तो 3 साल के भीतर मुकदमा दायर कर सकते हैं; जमा राशि व नुकसान की मांग कर सकते हैं। `DEP-3``DEP-5``DEP-1``DEP-2`\n- यदि आप वकील नहीं रख सकते, तो NALSA हेल्पलाइन 15100 पर मुफ्त कानूनी सहायता ले सकते हैं। `DEP-6`\n\n#### जाँचे गए स्रोत\n- `DEP-1` **Section 11, Model Tenancy Act, 2021**: Deposit cap and refund on vacating ([source](https://revenue.py.gov.in/downloads/notification/Model%20Tenancy%20Act.pdf)) _Caveat: Model law: it binds only in states/UTs that have enacted it. Many states still follow their own rent control law, and then the rent agreement terms decide refund timing._\n- `DEP-2` **Section 73, Indian Contract Act, 1872**: Compensation when a contract is broken ([source](https://www.indiacode.nic.in/handle/123456789/2187)) _Caveat: Compensation for indirect or remote losses is not allowed._\n- `DEP-3` **Limitation Act, 1963**: Time limit to file a money recovery case ([source](https://www.indiacode.nic.in/handle/123456789/1565)) _Caveat: The exact starting point depends on facts; near the 3-year mark a lawyer must check._\n- `DEP-4` **Practice: legal notice before a case**: Send a written legal notice first\n- `DEP-5` **Practice: civil court / Small Causes Court recovery**: Where to file if the notice fails _Caveat: Which court depends on the city/state and amount; do not name a specific court as certain._\n- `DEP-6` **Legal Services Authorities Act, 1987**: Free legal aid and Lok Adalat ([source](https://nalsa.gov.in/)) _Caveat: Eligibility income limits differ by state._\n\n_यह कानूनी जानकारी है, कानूनी सलाह नहीं। यह सिर्फ़ ऊपर दिए जाँचे गए स्रोतों पर आधारित है। कोर्ट के मामले या बड़ी रकम हो तो वकील से बात करें (मुफ़्त: NALSA 15100)।_",
+      "kind": "followup",
+      "meta": {
+        "points": [
+          {
+            "text": "लिखित नोटिस भेजें (रजिस्टर्ड पोस्ट/ईमेल/WhatsApp) ताकि मकान मालिक को औपचारिक रूप से मांग मिले।",
+            "kb_ids": [
+              "DEP-4"
+            ]
+          },
+          {
+            "text": "यदि नोटिस के 30 दिनों के भीतर जमा राशि वापस नहीं मिलती, तो 3 साल के भीतर मुकदमा दायर कर सकते हैं; जमा राशि व नुकसान की मांग कर सकते हैं।",
+            "kb_ids": [
+              "DEP-3",
+              "DEP-5",
+              "DEP-1",
+              "DEP-2"
+            ]
+          },
+          {
+            "text": "यदि आप वकील नहीं रख सकते, तो NALSA हेल्पलाइन 15100 पर मुफ्त कानूनी सहायता ले सकते हैं।",
+            "kb_ids": [
+              "DEP-6"
+            ]
+          }
+        ],
+        "safety_notes": []
+      }
+    }
+  ],
+  "llm_calls": [
+    {
+      "name": "triage",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 13.44,
+      "prompt_tokens": 471,
+      "completion_tokens": 166
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 2.47,
+      "prompt_tokens": 656,
+      "completion_tokens": 645
+    },
+    {
+      "name": "ask",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 4.14,
+      "prompt_tokens": 286,
+      "completion_tokens": 542
+    },
+    {
+      "name": "extract",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 9.37,
+      "prompt_tokens": 708,
+      "completion_tokens": 751
+    },
+    {
+      "name": "advise",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 18.84,
+      "prompt_tokens": 1725,
+      "completion_tokens": 967
+    },
+    {
+      "name": "followup",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 19.78,
+      "prompt_tokens": 1721,
+      "completion_tokens": 1082
+    }
+  ],
+  "model": "groq/openai/gpt-oss-20b"
+}
